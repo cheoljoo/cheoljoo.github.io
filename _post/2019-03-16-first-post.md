@@ -21,9 +21,3 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
-# Init
-- This my first blog.
-
-## How to make blog
-- https://dreamgonfly.github.io/2018/01/27/jekyll-remote-theme.html
-
