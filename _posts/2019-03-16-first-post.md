@@ -26,6 +26,12 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 ## How to make blog
 - reference : 
-  - https://dreamgonfly.github.io/2018/01/27/jekyll-remote-theme.html
+  - [github blog 1] : https://dreamgonfly.github.io/2018/01/27/jekyll-remote-theme.html
     - index.html -> _index.html
-  - https://devmjun.github.io/archive/CreatGithubBlog
+  - [Create Github Blog] : https://devmjun.github.io/archive/CreatGithubBlog
+
+```python
+def print_hi(name):
+  print("hello", name)
+print_hi('Tom')
+```
