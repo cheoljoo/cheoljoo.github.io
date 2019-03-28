@@ -22,7 +22,7 @@ categories: jekyll blog doxygen habit schedule PS
 # IMO
 - Be a Habit
     - I wanna get the working sequence.
-        - check calendar : before starting work , I check the calendar. Then I set the alarm in my phone not to attend the meeting late.
+        - check calendar : before starting work , I check the calendar. Then I set the alarm in my phone in order not to be late for the meeting.
         - check email briefly : see the email briefly and set a flag for seeing later in detail. and set the calendar for meetings.
         - check my working list : write down working something in wiki page. I summarize my weekly report with it.   basically I use this page as weekly report.
         - check email with a flag in detail : write down working something in wiki page. write down what to do and what will to do with the reason and results.
