@@ -1,0 +1,9 @@
+---
+layout: none
+---
+[{% for chart in site.data.pie-chart %}
+  {
+    "age": "{{ chart.age }}",
+    "population": "{{ chart.population }}"
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}]
