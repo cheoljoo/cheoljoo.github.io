@@ -4,29 +4,7 @@ date: 2019-04-06 08:26:28 -0400
 categories: python statistics schedule
 ---
 
-# My interests
-## Schedule programming for statistics of my work
-- insert my works on google calendar
-- get the information from google calendar through python programming
-- todo
-    - Need the skill how to insert the result of python into this blog
-
-## Doxygen
-- Analyze the doxygen to get 2 things
-    - generate markdown
-    - generate plantuml for FLOW  (FLOWKEYWORD in xml)
-
-## Problem Solving with my colleages 
-- every week we solve one problem.
-
-# IMO
-- Be a Habit
-    - I wanna get the working sequence.
-        - check calendar : before starting work , I check the calendar. Then I set the alarm in my phone in order not to be late for the meeting.
-        - check email briefly : see the email briefly and set a flag for seeing later in detail. and set the calendar for meetings.
-        - check my working list : write down working something in wiki page. I summarize my weekly report with it.   basically I use this page as weekly report.
-        - check email with a flag in detail : write down working something in wiki page. write down what to do and what will to do with the reason and results.
-        - post something if I feel....
+> [Previous Blog](https://cheoljoo.github.io/jekyll/blog/doxygen/habit/schedule/ps/starting-post/)
 
 # Project of ```work style```
 ## kinds of works
@@ -54,7 +32,7 @@ categories: python statistics schedule
     - this command shows the list to choose it easily
 
 ## How to check validation (jekyll for website and blog)
-- https://jekyllrb.com/docs/step-by-step/01-setup/
+- [jekyll for website and blog](https://jekyllrb.com/docs/step-by-step/01-setup/)
 
 ### how to do for jekyll
 - gem install jekyll bundler
@@ -63,20 +41,20 @@ categories: python statistics schedule
 > copy this repository into this
 - jekyll build
 - jekyll serve
-- http://localhost:4000
+- [Local Host Website](http://localhost:4000)
 
 ## How to show it efficiently (d3.js for infographics)
 - work result (just bar and pie chart)
-    - https://heal2u.github.io/bar-chart/
-    - https://heal2u.github.io/pie-chart/
+    - [bar chart for my monthly work style](https://heal2u.github.io/bar-chart/)
+    - [pie chart for my monthly work style](https://heal2u.github.io/pie-chart/)
 - reference
-    - https://github.com/heal2u/heal2u.github.io
-    - http://apievangelist.com/
+    - [heal2u blog](https://github.com/heal2u/heal2u.github.io)
+    - [Original Reference](http://apievangelist.com/)
 
 ## How to make statistics (python programming for statistics of my work style)
 - [Reference with Python Program](https://github.com/cheoljoo/schedule/blob/master/googleCalendar/README.md)
 - yaml
-    - [bar-chart.yaml](https://github.com/heal2u/heal2u.github.io/blob/master/_data/bar-chart.yaml] is made by python program)
+    - [bar-chart.yaml](https://github.com/heal2u/heal2u.github.io/blob/master/_data/bar-chart.yaml) is made by python program.
 - json
     - [2019-short.json](https://github.com/heal2u/heal2u.github.io/blob/master/data/2019-short.json)
 
@@ -88,15 +66,15 @@ categories: python statistics schedule
         - 2019-04-short.yaml
         - 2019-04-long.yaml
 - where can you show the result : 
-    - https://heal2u.github.io/bar-chart/
-    - https://heal2u.github.io/pie-chart/
-    - https://heal2u.github.io/data/bar-chart.json
-    - https://heal2u.github.io/data/pie-chart.json
-- d3.js : ./chart
-    - https://github.com/heal2u/heal2u.github.io/blob/master/_data/bar-chart.yaml  : take care of file name
-    - https://github.com/heal2u/heal2u.github.io/blob/master/data/bar-chart.json
-    - https://github.com/heal2u/heal2u.github.io/blob/master/bar-chart/index.html
-    - https://github.com/heal2u/heal2u.github.io/blob/master/pie-chart/index.html
+    - [Bar Chart](https://heal2u.github.io/bar-chart/)
+    - [Pie Chart](https://heal2u.github.io/pie-chart/)
+    - [Json file for Bar Chart](https://heal2u.github.io/data/bar-chart.json)
+    - [Json file for Pie Chart](https://heal2u.github.io/data/pie-chart.json)
+- d3.js : ./chart source code
+    - [data yaml of monthly work style](https://github.com/heal2u/heal2u.github.io/blob/master/_data/bar-chart.yaml)  : take care of file name
+    - [data json of yearly work style](https://github.com/heal2u/heal2u.github.io/blob/master/data/bar-chart.json)
+    - [source of bar chart monthly work style](https://github.com/heal2u/heal2u.github.io/blob/master/bar-chart/index.html)
+    - [source of pie chart monthly work style](https://github.com/heal2u/heal2u.github.io/blob/master/pie-chart/index.html)
     - reference
         - [Bar Chart : D3.js Visualizations Using YAML and Jekyll](https://apievangelist.com/2016/09/20/d3js-visualizations-using-yaml-and-jekyll/)
         - [Pie Chart : D3.js Visualizations Using YAML and Jekyll](http://d3.js.yaml.jekyll.apievangelist.com/pie-chart/)
@@ -110,17 +88,17 @@ categories: python statistics schedule
         - 2019-long.json
 - where can you show the result : 
     - You can not see the proper result in github. But you can see the result in jekyll developing environment.
-        - http://localhost:4000/stacked/
+        - [localhost website for local jekyll environment](http://localhost:4000/stacked/)
     - ![Stacked_Bar_Chart](https://github.com/cheoljoo/schedule/blob/master/images/2019-04-07_stacked.png)
 - d3.js : ./stacked_bar_chart
     - ./stacked_bar_chart/data/2019-short.json
     - ./stacked_bar_chart/stacked/index.html
     - reference
         - [Stacked Bar Chart Original Example](http://bl.ocks.org/jamesleesaunders/ac5b6134ad7144e8327d)
-        - http://bl.ocks.org/mstanaland/6100713
+        - [Original Stacked Bar Chart reference](http://bl.ocks.org/mstanaland/6100713)
 
 ## How to use statistics for d3.js ( it is not complete. it depends on cases. )
 - I should clear the unsolved problem.
-    - I can not show the proper stacked bar chart in https://heal2u.github.io
+    - I can not show the proper stacked bar chart in [heal2u](https://heal2u.github.io) .
 
 
