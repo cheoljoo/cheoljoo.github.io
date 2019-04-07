@@ -89,7 +89,7 @@ categories: python statistics schedule
 - where can you show the result : 
     - You can not see the proper result in github. But you can see the result in jekyll developing environment.
         - [localhost website for local jekyll environment](http://localhost:4000/stacked/)
-    - ![Stacked_Bar_Chart](https://github.com/cheoljoo/schedule/blob/master/images/2019-04-07_stacked.png)
+    - ![Stacked_Bar_Chart](/images/2019-04-07_stacked.png)
 - d3.js : ./stacked_bar_chart
     - ./stacked_bar_chart/data/2019-short.json
     - ./stacked_bar_chart/stacked/index.html
