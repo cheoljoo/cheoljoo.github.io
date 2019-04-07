@@ -100,5 +100,6 @@ categories: python statistics schedule
 ## How to use statistics for d3.js ( it is not complete. it depends on cases. )
 - I should clear the unsolved problem.
     - I can not show the proper stacked bar chart in [heal2u](https://heal2u.github.io) .
+    - jekyll local server is ok but heal2u.github.io is fail. When I view the source code of their page, they are same. I do not know what is different.
 
 
