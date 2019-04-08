@@ -1,7 +1,7 @@
 ---
 layout: none
 ---
-[{% for chart in site.data.bar-chart %}
+[{% for chart in site.data.2019-04 %}
   {
     "letter": "{{ chart.year }}",
     "frequency": "{{ chart.frequency }}"
