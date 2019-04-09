@@ -45,8 +45,10 @@ categories: python markdown plantuml github json text
 
 ## my project 
 - needs : github , markdown , plantuml , perl etc
-- CGADoxygen , RDL
+- CGADoxygen , RDL , doxygen
 
+# Next (ToDo)
+- chrome inspector for debugging of webpage.
 
     - I made the command based on text.   [schedule](https://github.com/cheoljoo/schedule)
 - [jekyll for website and blog](https://jekyllrb.com/docs/step-by-step/01-setup/)
