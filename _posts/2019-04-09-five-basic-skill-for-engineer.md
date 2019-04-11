@@ -44,6 +44,7 @@ categories: python markdown plantuml github json text
 - My Blog : [cheoljoo.github.io](https://cheoljoo.github.io/)
 - we can run our blog on github.
     - How to make blog in github. [GitHub.io](https://dreamgonfly.github.io/2018/01/27/jekyll-remote-theme.html)
+        - [tutorial of github.io - GitHub Pages](https://pages.github.com/)
     - [jekyll for website and blog](https://jekyllrb.com/docs/step-by-step/01-setup/)
 
 ## my work style with schedule of google calendar
@@ -76,6 +77,10 @@ categories: python markdown plantuml github json text
 
 # Next (ToDo)
 - chrome inspector for debugging of webpage.
+- github pages
+    - [Sharing interactive plots on GitHub](https://automating-gis-processes.github.io/2016/Lesson5-share-on-github.html)
+- I wanna run python script in github.io (pages).
+    - [answer](https://stackoverflow.com/questions/24296873/is-it-possible-to-run-python-in-the-web-with-github-io) is impossible to run python script in github.io
 
 
 
