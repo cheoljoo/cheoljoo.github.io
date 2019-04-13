@@ -1,7 +1,9 @@
 ---
 title: "Visualization : d3.js and other links"
 date: 2019-04-12 08:26:28 -0400
+categories: d3.js visualization json infographics
 ---
+visualize something to understand easily. infographics is a good example. we need d3.js how to show it from our data.
 
 # visualizations
 - [D3.js ressources collection](https://gist.github.com/revolunet/8213461)

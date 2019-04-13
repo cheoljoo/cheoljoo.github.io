@@ -1,8 +1,9 @@
 ---
 title: "Starting the post"
-date: 2019-03-29 08:26:28 -0400
+date: 2019-03-29 08:26:28 +0900
 categories: jekyll blog doxygen habit schedule PS
 ---
+This is my first blog page in github.io.
 
 # My interests
 ## Schedule programming for statistics of my work

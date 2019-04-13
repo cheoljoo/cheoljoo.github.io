@@ -1,7 +1,9 @@
 ---
 title: "OKR KPI Plan Scrum"
-date: 2019-04-13 08:26:28 -0400
+date: 2019-04-13 08:26:28  +0900
+categories: plan work office
 ---
+need plan to work well. this is a kind of project and work management.
 
 # OKR (Objectives , Key Result)
 

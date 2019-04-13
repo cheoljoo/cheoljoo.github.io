@@ -1,8 +1,9 @@
 ---
-title: "work style"
-date: 2019-04-06 08:26:28 -0400
+title: "how to check my statistics for my work style (schedule)"
+date: 2019-04-06 08:26:28 +0900
 categories: python statistics schedule
 ---
+Need to get statistics for my schedule. what jobs do I focus on?
 
 > [Previous Blog](https://cheoljoo.github.io/jekyll/blog/doxygen/habit/schedule/ps/starting-post/)
 

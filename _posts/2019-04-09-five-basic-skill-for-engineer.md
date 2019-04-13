@@ -1,6 +1,6 @@
 ---
 title: "5 basic skills of engineer to survive"
-date: 2019-04-09 08:26:28 -0400
+date: 2019-04-09 08:26:28 +0900
 categories: python markdown plantuml github json text
 ---
 
