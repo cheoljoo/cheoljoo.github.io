@@ -36,5 +36,5 @@ New finding of plantuml : How to show plantuml as a png without server
 
 ### external link using plantuml proxy  proxy?rawFileLocation
 - this is the best method to show it. it can reduce the waste storage because puml will be proessed (emulated)  through plantuml proxy server.
-	![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
+	- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 
