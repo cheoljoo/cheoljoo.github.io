@@ -1,6 +1,7 @@
 ---
 title: "New finding of plantuml : How to show plantuml as a png without server""
 date: 2019-06-09 08:26:28 -0400
+categories: plantuml
 ---
 
 New finding of plantuml : How to show plantuml as a png without server
