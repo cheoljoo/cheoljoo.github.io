@@ -11,7 +11,8 @@ New finding of plantuml : How to show plantuml as a png without server
 ## policy and steps
 - make plantuml file separately
     - make plantuml file (sample.txt)  in github : [raw file example](https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
-```
+
+```text
     @startuml
     Alice -> Bob: Authentication Request
     Bob --> Alice: Authentication Response
