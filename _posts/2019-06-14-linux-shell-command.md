@@ -5,4 +5,4 @@ categories: linux shell
 ---
 
 # get line count of files
-- find . -type f -exec wc -l {} \; | awk '{print $1}' | sum
+- ```find . -type f -exec wc -l {} \; | awk '{print $1}' | sum```
