@@ -40,10 +40,13 @@ New finding of plantuml : How to show plantuml as a png without server
 	- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 - this is source of link and input file
     - source of link 
+
 ```
 ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 ```
+
     - input file 
+
 ```
 @startuml
 Alice -> Bob: Authentication Request
@@ -53,4 +56,130 @@ Alice -> Bob: Another authentication Request
 Alice <-- Bob: Another authentication Response
 @enduml
 ```
+
+
+# Lable on relations of class
+- I will describe the basic usages.
+    - Class : name starts with C
+    - Interface : name starts with I
+
+## Map between C++ and plantuml
+- normal class with derived class
+```cpp
+class A : B {};
+```
+
+```puml
+@startuml
+A --> B
+@enduml
+```
+
+
+- inner class
+```cpp 
+class  CA : CB {
+    class CC : CD {
+    }
+}
+```
+
+```puml
+@startuml
+CA --> CB
+CA.CC --> CA.CD
+@enduml
+```
+
+
+- class with members (member variables) : composition
+```cpp
+class CA : CB {
+    CC mC;
+}
+```
+
+```puml
+@startuml
+CA --> CB
+CA *-- CC : composition
+@enduml
+```
+
+
+- pointer or reference : aggregation
+```cpp
+class CA : CB {
+    CC& mC;
+    CD* mD;
+}
+```
+
+```puml
+@startuml
+CA --> CB 
+CA o-- CC : aggregation
+CA o-- CD : aggregation
+@enduml
+```
+
+- Interface
+```cpp
+class CA : IB {
+    CC& mC;
+    ID* mD;
+}
+```
+
+```puml
+@startuml
+CA ..> IB 
+CA o-- CC : aggregation
+CA o.. ID : aggregation
+@enduml
+```
+
+
+## relations between modules
+- API calls
+
+```puml
+@startuml
+skinparam rectangle {
+    roundCorner<<Concept>> 25
+}
+
+rectangle "Application" <<Concept>> as Application1 {
+    rectangle "Application"
+}
+rectangle "MiddleWare" <<Concept>> as ServiceManager1 {
+    rectangle "ServiceManager"
+}
+rectangle "OS" <<Concept>> as OS {
+    rectangle "Binder"
+    rectangle "Linux"
+}
+Application -(0- ServiceManager
+Application -(0- OS
+ServiceManager -(0- OS
+@enduml
+```
+
+
+
+
+## list of used class
+```
+@startuml
+skinparam componentStyle uml2
+
+package "Package_A" {
+[First Component]
+[Second Component]
+}
+[Third Component]
+
+@enduml
+```
+
 
