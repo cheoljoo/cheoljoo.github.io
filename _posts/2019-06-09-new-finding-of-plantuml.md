@@ -62,20 +62,23 @@ Alice <-- Bob: Another authentication Response
 
 ## Map between C++ and plantuml
 - normal class with derived class
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/normal.plantuml)
 ```cpp
 class A : B {};
 ```
 
 ```puml
 @startuml
+class A 
+class B
 A --> B
 @enduml
 ```
 
-    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/normal.plantuml)
 
 
 - inner class
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/inner.plantuml)
 ```cpp 
 class  CA : CB {
     class CC : CD {
@@ -90,9 +93,9 @@ CA.CC --> CA.CD
 @enduml
 ```
 
-    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/inner.plantuml)
 
 - class with members (member variables) : composition
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/composition.plantuml)
 ```cpp
 class CA : CB {
     CC mC;
@@ -106,9 +109,9 @@ CA *-- CC : composition
 @enduml
 ```
 
-    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/composition.plantuml)
 
 - pointer or reference : aggregation
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/aggregation.plantuml)
 ```cpp
 class CA : CB {
     CC& mC;
@@ -124,10 +127,10 @@ CA o-- CD : aggregation
 @enduml
 ```
 
-    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/aggregation.plantuml)
 
 
 - Interface
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/interface.plantuml)
 ```cpp
 class CA : IB {
     CC& mC;
@@ -143,11 +146,11 @@ CA o.. ID : aggregation
 @enduml
 ```
 
-    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/interface.plantuml)
 
 
 ## relations between modules
 - API calls
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/modules.plantuml)
 
 ```puml
 @startuml
@@ -172,10 +175,10 @@ ServiceManager -(0- OS
 ```
 
 
-    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/modules.plantuml)
 
 
 ## list of used class
+- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/classlist.plantuml)
 ```puml
 @startuml
 skinparam componentStyle uml2
@@ -189,5 +192,4 @@ package "Package_A" {
 @enduml
 ```
 
-- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/classlist.plantuml)
 
