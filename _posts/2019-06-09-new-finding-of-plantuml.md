@@ -79,6 +79,7 @@ A --> B
 
 - inner class
     - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/inner.plantuml)
+    - ![img](https://plantuml-server.kkeisuke.app/png/SoWkIImgAStDuKhEIImkLd1sr7DsHcAxS3axAkZgsYauEt61vI0Si8n3QbuAK2S0.png)
 ```cpp 
 class  CA : CB {
     class CC : CD {
