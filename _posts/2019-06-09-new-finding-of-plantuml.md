@@ -40,7 +40,6 @@ New finding of plantuml : How to show plantuml as a png without server
 	- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 - this is source of link and input file
     - source of link & input file
-
 ```
 ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 ```
@@ -73,9 +72,7 @@ A --> B
 @enduml
 ```
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/normal.plantuml)
-```
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/normal.plantuml)
 
 
 - inner class
@@ -93,9 +90,7 @@ CA.CC --> CA.CD
 @enduml
 ```
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/inner.plantuml)
-```
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/inner.plantuml)
 
 - class with members (member variables) : composition
 ```cpp
@@ -111,9 +106,7 @@ CA *-- CC : composition
 @enduml
 ```
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/composition.plantuml)
-```
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/composition.plantuml)
 
 - pointer or reference : aggregation
 ```cpp
@@ -131,9 +124,7 @@ CA o-- CD : aggregation
 @enduml
 ```
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/aggregation.plantuml)
-```
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/aggregation.plantuml)
 
 
 - Interface
@@ -152,9 +143,7 @@ CA o.. ID : aggregation
 @enduml
 ```
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/interface.plantuml)
-```
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/interface.plantuml)
 
 
 ## relations between modules
@@ -183,9 +172,7 @@ ServiceManager -(0- OS
 ```
 
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/modules.plantuml)
-```
+    - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/modules.plantuml)
 
 
 ## list of used class
@@ -202,7 +189,5 @@ package "Package_A" {
 @enduml
 ```
 
-```
-![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/classlist.plantuml)
+- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/classlist.plantuml)
 
-```
