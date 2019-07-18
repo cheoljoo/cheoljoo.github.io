@@ -1,0 +1,10 @@
+@startuml
+skinparam componentStyle uml2
+
+package "Package_A" {
+    [First Component]
+    [Second Component]
+}
+[Third Component]
+
+@enduml

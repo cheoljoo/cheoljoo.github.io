@@ -39,15 +39,13 @@ New finding of plantuml : How to show plantuml as a png without server
 - this is the best method to show it. it can reduce the waste storage because puml will be proessed (emulated)  through plantuml proxy server.
 	- ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 - this is source of link and input file
-    - source of link 
+    - source of link & input file
 
 ```
 ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/sample.txt)
 ```
 
-    - input file 
-
-```
+```puml
 @startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
@@ -75,6 +73,10 @@ A --> B
 @enduml
 ```
 
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/normal.plantuml)
+```
+
 
 - inner class
 ```cpp 
@@ -91,6 +93,9 @@ CA.CC --> CA.CD
 @enduml
 ```
 
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/inner.plantuml)
+```
 
 - class with members (member variables) : composition
 ```cpp
@@ -106,6 +111,9 @@ CA *-- CC : composition
 @enduml
 ```
 
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/composition.plantuml)
+```
 
 - pointer or reference : aggregation
 ```cpp
@@ -123,6 +131,11 @@ CA o-- CD : aggregation
 @enduml
 ```
 
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/aggregation.plantuml)
+```
+
+
 - Interface
 ```cpp
 class CA : IB {
@@ -137,6 +150,10 @@ CA ..> IB
 CA o-- CC : aggregation
 CA o.. ID : aggregation
 @enduml
+```
+
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/interface.plantuml)
 ```
 
 
@@ -166,10 +183,13 @@ ServiceManager -(0- OS
 ```
 
 
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/modules.plantuml)
+```
 
 
 ## list of used class
-```
+```puml
 @startuml
 skinparam componentStyle uml2
 
@@ -182,4 +202,7 @@ package "Package_A" {
 @enduml
 ```
 
+```
+![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/classlist.plantuml)
 
+```

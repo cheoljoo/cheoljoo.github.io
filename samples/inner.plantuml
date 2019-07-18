@@ -1,0 +1,4 @@
+@startuml
+CA --> CB
+CA.CC --> CA.CD
+@enduml

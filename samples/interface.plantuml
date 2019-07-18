@@ -1,0 +1,5 @@
+@startuml
+CA ..> IB 
+CA o-- CC : aggregation
+CA o.. ID : aggregation
+@enduml

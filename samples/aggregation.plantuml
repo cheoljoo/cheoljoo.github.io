@@ -1,0 +1,5 @@
+@startuml
+CA --> CB 
+CA o-- CC : aggregation
+CA o-- CD : aggregation
+@enduml

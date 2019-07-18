@@ -1,0 +1,19 @@
+@startuml
+skinparam rectangle {
+        roundCorner<<Concept>> 25
+}
+
+rectangle "Application" <<Concept>> as Application1 {
+        rectangle "Application"
+}
+rectangle "MiddleWare" <<Concept>> as ServiceManager1 {
+        rectangle "ServiceManager"
+}
+rectangle "OS" <<Concept>> as OS {
+        rectangle "Binder"
+            rectangle "Linux"
+}
+Application -(0- ServiceManager
+Application -(0- OS
+ServiceManager -(0- OS
+@enduml
