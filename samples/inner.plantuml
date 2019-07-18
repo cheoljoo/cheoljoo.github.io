@@ -1,4 +1,6 @@
 @startuml
+class CA.CC
+class CA.CD
 CA --> CB
 CA.CC --> CA.CD
 @enduml

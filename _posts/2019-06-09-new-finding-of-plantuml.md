@@ -88,6 +88,8 @@ class  CA : CB {
 
 ```puml
 @startuml
+class CA.CC
+class CA.CD
 CA --> CB
 CA.CC --> CA.CD
 @enduml
@@ -141,8 +143,8 @@ class CA : IB {
 ```puml
 @startuml
 CA ..> IB 
-CA o-- CC : aggregation
-CA o.. ID : aggregation
+CA o-- CC : interface aggregation
+CA o.. ID : interface aggregation
 @enduml
 ```
 
@@ -179,6 +181,7 @@ ServiceManager -(0- OS
 
 ## list of used class
 - ![img](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/cheoljoo/cheoljoo.github.io/master/samples/classlist.plantuml)
+
 ```puml
 @startuml
 skinparam componentStyle uml2
