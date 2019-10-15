@@ -54,6 +54,9 @@ Alice <-- Bob: Another authentication Response
 @enduml
 ```
 
+### use the link from plantuml server
+- use : https://plantuml-server.kkeisuke.app
+
 
 # Lable on relations of class
 - I will describe the basic usages.
