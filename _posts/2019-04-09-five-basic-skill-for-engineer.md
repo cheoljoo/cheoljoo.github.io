@@ -35,6 +35,9 @@ categories: python markdown plantuml github json text
 - All is not mandatory. But these are good tools to develop the program.
 - [python](https://www.python.org) : [Tutorial](https://docs.python.org/3/tutorial/index.html)
 
+## share the screen or terminal
+- [Sharing Linux Terminal Sessions With Tmux and
+  Screen](https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen)
 
 
 # what can I do with them?
