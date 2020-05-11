@@ -36,8 +36,10 @@ categories: python markdown plantuml github json text
 - [python](https://www.python.org) : [Tutorial](https://docs.python.org/3/tutorial/index.html)
 
 ## share the screen or terminal
-- [Sharing Linux Terminal Sessions With Tmux and
-  Screen](https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen)
+- [Sharing Linux Terminal Sessions With Tmux and Screen](https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen)
+- same account with tmux
+    - tmux new-session -s [shared_name]
+    - tmux attach-session -t [shared_name]
 
 
 # what can I do with them?
