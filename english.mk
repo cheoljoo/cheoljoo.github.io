@@ -57,7 +57,7 @@ generate-content:
 	@cd $(REPO_DIR) && make prompt || (echo "❌ 'make prompt' failed" && exit 1)
 	@echo "✅ 'make prompt' completed successfully"
 	@echo "🔨 Running 'make' in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && make || (echo "❌ 'make' failed" && exit 1)
+	@cd $(REPO_DIR) && make recent || (echo "❌ 'make' failed" && exit 1)
 	@echo "✅ 'make' completed successfully"
 	@echo "📝 Committing changes in $(REPO_DIR)..."
 	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && git add -A && git commit -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] English content generation'"
