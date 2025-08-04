@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Learning Contents"
-permalink: /contents/
+permalink: /contents
 ---
 
 <div class="page">
@@ -20,12 +20,17 @@ permalink: /contents/
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   fetch('/contents.json')
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
     .then(data => {
       const container = document.getElementById('contents-container');
       container.innerHTML = '';
       
-      if (data.length === 0) {
+      if (!data || data.length === 0) {
         container.innerHTML = '<p>No contents available at the moment.</p>';
         return;
       }
@@ -65,7 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => {
       console.error('Error loading contents:', error);
       document.getElementById('contents-container').innerHTML = 
-        '<div class="error-message"><p>⚠️ Failed to load contents. Please try refreshing the page.</p></div>';
+        `<div class="error-message">
+          <p>⚠️ Failed to load contents.</p>
+          <p>Error: ${error.message}</p>
+          <p>Please check if the contents.json file exists and is accessible.</p>
+        </div>`;
     });
 });
 </script>

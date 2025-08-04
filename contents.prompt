@@ -3,7 +3,13 @@ database.csv 은 csv 형식의 파일이며 ,
     - URL : 기사 URL
     - topic : 기사 제목
   을 가지고 있다. 
-그러나, 오늘 날짜의 기사가 없다면 가장 최신의 AI technology 1개를 database.csv에 추가를 한다. 
+그러나, 오늘 날짜의 기사가 없다면 다음 6개 사이트에서 1개씩의 최신 기사를 database.csv에 추가를 해 주시요.
+  techcrunch.com/ - 최신 스타트업 뉴스
+  https://venturebeat.com/ - AI 및 비즈니스 기술
+  https://arstechnica.com/ - 심층 기술 분석
+  https://techradar.com/ - 제품 리뷰 및 하드웨어
+  https://www.theverge.com/ - 소비자 기술
+  https://engadget.com/ - 가전 및 모바일
   
 database.csv를 다시 읽는다.
 contents.json 이라는 파일을 읽어서, URL이 이미 포함된 것은 skip한다.
@@ -11,7 +17,7 @@ contnets.json에 없는 URL인 경우에는 내용을 읽어와서 contents.json
     - date : 위의 날짜
     - topic : 기사 제목  (topic이 없으면 기사에서 찾아서 넣어달라.)
     - URL : 기사 URL
-    - source : URL있는 기사의 Text 부분만 발췌 (광고등은 제거하고 기사 부분만을 발췌해달라.)
+    - source : URL있는 기사의 모든 Text 부분을 적어주세요. (광고는 제거)
     - summary : 기사 내용을 summary해 달라. 최대 400자 이내로 summary해 달라. 
     - questions : 최대 4개의 question을 만들어 달라.
 

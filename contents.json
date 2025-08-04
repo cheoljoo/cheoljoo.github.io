@@ -24,5 +24,109 @@
       "How has the architecture of LLMs evolved over time?",
       "What are some of the emergent abilities of large language models?"
     ]
+  },
+  {
+    "date": "2025-08-03",
+    "topic": "Chinese youth make sun protection masks from giant lotus leaves, ignite online hilarity",
+    "URL": "https://www.scmp.com/news/people-culture/environment/article/3315608/chinese-youth-make-sun-protection-masks-giant-lotus-leaves-ignite-online-hilarity",
+    "source": "Young people in China have taken self-made sun protection to the next level with their latest innovation: full-face masks made from lotus leaves. People from southern Chinese provinces, such as Zhejiang, Sichuan and Fujian, are making their own sun protection masks with lotus leaves they pick from roadside ponds. Viral videos show them covering their faces with the giant leaves, which are at least twice the size of their faces, using hats or helmets with straps to wrap and tighten the leaves. Eye and nose holes are poked through the leaves to allow seeing and breathing. One practitioner from Fujian province said he found them very effective, praising the sun protection tool as natural and free of charge.",
+    "summary": "Chinese youth are creating innovative sun protection masks using giant lotus leaves picked from roadside ponds. These DIY masks, secured with hats or helmets, cover the entire face with holes for breathing and seeing. The trend has gone viral on social media, sparking humorous reactions online where users compare the wearers to mosquitoes or Pinocchio due to the protruding stems. While effective and free, some have raised safety concerns about wearing them while driving.",
+    "questions": [
+      "What materials do Chinese youth use to make these sun protection masks?",
+      "How do users secure the lotus leaves to their faces?",
+      "What are the safety concerns raised about wearing lotus leaf masks?",
+      "How has social media reacted to this trending sun protection method?"
+    ]
+  },
+  {
+    "date": "2025-08-05",
+    "topic": "Inside OpenAI's quest to make AI do anything for you",
+    "URL": "https://techcrunch.com/2025/08/03/inside-openais-quest-to-make-ai-do-anything-for-you/",
+    "source": "OpenAI shocked the world with the release of its first AI reasoning model, o1, in the fall of 2024. The 21 foundational researchers behind that breakthrough are now the most highly sought-after talent in Silicon Valley. Mark Zuckerberg recruited five of the o1 researchers to work on Meta's new superintelligence-focused unit, offering compensation packages north of $100 million. OpenAI's agents are the product of a years-long, deliberate effort within the company to create general-purpose agents that can complete complex tasks like humans would. The company combined large language models, reinforcement learning, and test-time computation to achieve breakthroughs in AI reasoning capabilities.",
+    "summary": "OpenAI's breakthrough AI reasoning model o1 has sparked Silicon Valley's obsession with AI agents. The 21 researchers behind o1 have become highly sought-after talent, with Meta recruiting five of them for packages exceeding $100 million. OpenAI combines reinforcement learning with large language models to create agents capable of complex reasoning tasks. While current agents struggle with subjective tasks, OpenAI aims to build ultimate AI systems that can do anything on the internet intuitively.",
+    "questions": [
+      "What made OpenAI's o1 reasoning model a breakthrough in AI development?",
+      "How much are tech companies paying to recruit OpenAI's o1 researchers?",
+      "What techniques does OpenAI combine to create AI reasoning models?",
+      "What are the current limitations of AI agents in handling subjective tasks?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "Apple might be building its own AI 'answer engine'",
+    "URL": "https://techcrunch.com/2025/08/03/apple-might-be-building-its-own-ai-answer-engine/",
+    "source": "Apple has formed a new team to build a ChatGPT-like app, according to Bloomberg's Mark Gurman. This team — reportedly called Answers, Knowledge, and Information — is working to build an 'answer engine' that can respond to questions using information from across the web. This could be a standalone app or provide search capabilities in Siri, Safari, and other Apple products. Gurman also notes that Apple is advertising for jobs with this team, specifically looking for applicants who have experience with search algorithms and engine development. While Apple has already integrated ChatGPT into Siri, a more personalized, AI-powered update to the voice assistant has been repeatedly delayed. Apple might also have to alter its search deal with Google as a result of the latter company's antitrust defeat.",
+    "summary": "Apple formed team 'Answers, Knowledge, and Information' to build ChatGPT-like answer engine that can respond to questions using web information, potentially as standalone app or integrated into Siri, Safari.",
+    "questions": [
+      "How would Apple's answer engine differentiate from existing solutions like ChatGPT?",
+      "What challenges does Apple face in developing competitive AI search capabilities?",
+      "How might this impact Apple's existing relationship with Google and OpenAI?",
+      "What privacy advantages could Apple offer in an AI-powered search experience?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "New vision model from Cohere runs on two GPUs, beats top-tier VLMs on visual tasks",
+    "URL": "https://venturebeat.com/ai/new-vision-model-from-cohere-runs-on-two-gpus-beats-top-tier-vlms-on-visual-tasks/",
+    "source": "Canadian AI company Cohere released Command A Vision, a 112 billion parameter visual model specifically targeting enterprise use cases. The model can analyze charts, diagrams, PDFs, and photos, outperforming OpenAI's GPT-4.1 and Meta's Llama 4 in benchmark tests while requiring only two GPUs. Command A Vision is built on Cohere's Command A architecture using Llava architecture, turning visual features into soft vision tokens divided into tiles. The model was trained in three stages: vision-language alignment, supervised fine-tuning, and post-training reinforcement learning with human feedback. Cohere offers Command A Vision as an open weights system for enterprises looking to move away from closed or proprietary models.",
+    "summary": "Cohere released Command A Vision, 112B parameter model for enterprise visual tasks, outperforming GPT-4.1 and Llama 4 in benchmarks while requiring only two GPUs for operation.",
+    "questions": [
+      "What advantages does Command A Vision offer for enterprise visual document processing?",
+      "How does Cohere's approach to vision models differ from competitors like OpenAI?",
+      "What impact could efficient GPU usage have on enterprise AI adoption costs?",
+      "How might specialized enterprise AI models change the competitive landscape?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "ChatGPT users shocked to learn their chats were in Google search results",
+    "URL": "https://arstechnica.com/tech-policy/2025/08/chatgpt-users-shocked-to-learn-their-chats-were-in-google-search-results/",
+    "source": "OpenAI removed a ChatGPT feature after it was discovered that thousands of private ChatGPT conversations were appearing in Google search results due to a misleading 'Make this chat discoverable' option that users accidentally enabled when sharing chats. Fast Company exposed the privacy issue, reporting that while the indexing did not include identifying information about users, some chats shared personal details that could potentially identify them. OpenAI's chief information security officer Dane Stuckey explained that all users whose chats were exposed opted in to indexing by clicking a box after choosing to share a chat, but the feature was designed misleadingly. OpenAI initially defended the labeling as 'sufficiently clear' but ultimately decided the feature 'introduced too many opportunities for folks to accidentally share things they didn't intend to.'",
+    "summary": "OpenAI removed ChatGPT feature after thousands private conversations appeared in Google search results due to misleading 'discoverable' option users accidentally enabled when sharing.",
+    "questions": [
+      "What design principles should guide privacy controls in AI chat applications?",
+      "How can companies better communicate the implications of data sharing features?",
+      "What are the broader privacy risks of AI conversations being indexed by search engines?",
+      "How should users approach privacy settings in AI applications moving forward?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "Quordle hints and answers for Monday, August 4",
+    "URL": "https://www.techradar.com/computing/websites-apps/quordle-today-answers-clues-4-august-2025",
+    "source": "Daily Quordle puzzle game #1288 for August 4, 2025, featuring four five-letter words with hints about vowels, repeated letters, and starting letters. Today's puzzle contains 4 different vowels and 2 words with repeated letters. None of the uncommon letters Q, Z, X, or J appear in today's answers. Two of today's words start with the same letter. The starting letters are M, S, C, and C. Today's answers are MACAW, SINCE, COLON, and CHIRP. The Daily Sequence for game #1288 features REFIT, RAPID, DRUID, and TWIST. Quordle was one of the original Wordle alternatives and continues to provide a genuine challenge for word puzzle enthusiasts.",
+    "summary": "Quordle game #1288 for August 4, 2025 featured words MACAW, SINCE, COLON, CHIRP with hints about 4 different vowels and 2 words containing repeated letters.",
+    "questions": [
+      "What strategies are most effective for solving Quordle puzzles efficiently?",
+      "How do word puzzle games like Quordle contribute to cognitive development?",
+      "What makes Quordle different from other word-based puzzle games?",
+      "How has the popularity of word games evolved in the digital age?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "Nintendo raises the Switch 1 price from $299 to $339",
+    "URL": "https://www.theverge.com/news/717610/nintendo-switch-original-price-increase",
+    "source": "Nintendo increased the price of the original Switch console from $299.99 to $339.99, with the Switch OLED rising from $349.99 to $399.99. The price increase follows Trump's new tariffs, including a 20% levy on products from Vietnam where Nintendo manufactures most Switch consoles. Nintendo said on Friday that its decision to raise the price was 'based on market conditions,' implementing similar pricing in Canada on August 1st. The announcement came one day after President Donald Trump signed an executive order imposing new 'reciprocal' tariffs on various countries. Nintendo also issued $10 price increases for the Alarmo and Switch 1 Joy-Cons. With the price increase, the Switch OLED is now only slightly less expensive than the $449.99 Switch 2.",
+    "summary": "Nintendo raised original Switch price from $299 to $339 and OLED from $349 to $399, citing market conditions following Trump's 20% tariffs on Vietnamese imports.",
+    "questions": [
+      "How do international trade policies impact consumer electronics pricing?",
+      "What factors should companies consider when implementing price increases?",
+      "How might these price changes affect Nintendo's competitive position against other consoles?",
+      "What are the broader implications of tariff policies on the gaming industry?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "Apple reportedly has a 'stripped-down' AI chatbot to compete with ChatGPT in the works",
+    "URL": "https://www.engadget.com/ai/apple-reportedly-has-a-stripped-down-ai-chatbot-to-compete-with-chatgpt-in-the-works-164345473.html",
+    "source": "Apple created a team called 'Answers, Knowledge and Information' to develop a ChatGPT rival that can crawl the web to respond to questions. According to Bloomberg's Mark Gurman, this represents a major change from Apple's earlier stance when the company partnered with OpenAI in 2024 to infuse Siri with ChatGPT instead of developing its own AI chatbot. The new capabilities could be a standalone app or support AI features for Siri, Spotlight, and Safari, led by former Siri overseer Robby Walker. The team has been advertising job openings that mention wanting experience with search algorithms and engine development. Apple has experienced growing pains with AI, delaying the release of the new-and-improved Siri, and CEO Tim Cook said Apple is open to acquisitions to fast-track its AI roadmap.",
+    "summary": "Apple's 'Answers, Knowledge and Information' team develops ChatGPT rival for web search, potentially as standalone app or integrated into Siri, Spotlight, Safari under Robby Walker's leadership.",
+    "questions": [
+      "What strategic advantages would Apple gain from developing its own AI chatbot?",
+      "How might Apple's privacy-focused approach differentiate its AI offerings?",
+      "What technical challenges does Apple face in competing with established AI companies?",
+      "How could Apple's integration across devices enhance its AI chatbot experience?"
+    ]
   }
 ]
