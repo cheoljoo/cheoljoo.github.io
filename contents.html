@@ -6,7 +6,7 @@ permalink: /contents/
 
 <div class="page">
   <header class="page__header">
-    <h1 class="page__title">📚 Learning Contents</h1>
+    <h1 class="page__title">Learning Contents</h1>
     <p class="page__lead">A collection of learning resources and insights</p>
   </header>
 
@@ -46,20 +46,23 @@ document.addEventListener('DOMContentLoaded', function() {
             </a>
           </h3>
           <p class="date">
-            📅 ${item.date}
+            date: ${item.date}
+          </p>
+          <p class="source">
+            <strong>Source:</strong> ${item.source}
           </p>
           <p class="summary">
             <strong>Summary:</strong> ${item.summary}
           </p>
           <div class="questions">
-            <strong>🤔 Questions to explore:</strong>
+            <strong>Questions to explore:</strong>
             <ul>
               ${item.questions.map(q => `<li>${q}</li>`).join('')}
             </ul>
           </div>
           <p class="source-link">
             <a href="${item.URL}" target="_blank" rel="noopener noreferrer">
-              🔗 Read more at source
+              Read more at source
             </a>
           </p>
         `;
@@ -141,6 +144,13 @@ document.addEventListener('DOMContentLoaded', function() {
   font-weight: 500;
 }
 
+.content-item .source {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+}
+
 .content-item .summary {
   margin: 15px 0;
   line-height: 1.6;
@@ -217,6 +227,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   .content-item .date {
+    color: #8b949e;
+  }
+  
+  .content-item .source {
     color: #8b949e;
   }
   
