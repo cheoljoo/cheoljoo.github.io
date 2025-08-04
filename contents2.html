@@ -1,231 +1,313 @@
----
-layout: default
-title: "Learning Contents (Static)"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Contents (Static)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-<div class="page">
-  <header class="page__header">
-    <h1 class="page__title">Learning Contents</h1>
-    <p class="page__lead">A collection of learning resources and insights</p>
-  </header>
+        /* Page-specific styles for contents */
+        .page__header {
+            text-align: center;
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+            border-bottom: 2px solid #e1e4e8;
+        }
 
-  <div id="contents-section">
-    {% if site.data.contents %}
-      {% for item in site.data.contents %}
-        <div class="content-item">
-          <h3>
-            <a href="{{ item.URL }}" target="_blank" rel="noopener noreferrer">
-              {{ item.topic }}
-            </a>
-          </h3>
-          <p class="date">
-            date: {{ item.date }}
-          </p>
-          <p class="source">
-            <strong>Source:</strong> {{ item.source }}
-          </p>
-          <p class="summary">
-            <strong>Summary:</strong> {{ item.summary }}
-          </p>
-          <div class="questions">
-            <strong>Questions to explore:</strong>
-            <ul>
-              {% for question in item.questions %}
-                <li>{{ question }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-          <p class="source-link">
-            <a href="{{ item.URL }}" target="_blank" rel="noopener noreferrer">
-              Read more at source
-            </a>
-          </p>
+        .page__title {
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .page__lead {
+            color: #666;
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        #contents-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-item {
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .content-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .content-item h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        .content-item h3 a {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+        }
+
+        .content-item h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .content-item .date {
+            color: #666;
+            font-size: 0.9em;
+            margin: 5px 0 15px 0;
+            font-weight: 500;
+        }
+
+        .content-item .source {
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #555;
+            font-style: italic;
+        }
+
+        .content-item .summary {
+            margin: 15px 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .content-item .questions {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 6px;
+            border-left: 4px solid #0366d6;
+        }
+
+        .content-item .questions strong {
+            color: #0366d6;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .content-item .questions ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .content-item .questions li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .content-item .source-link {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .content-item .source-link a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            background-color: #f1f8ff;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .content-item .source-link a:hover {
+            background-color: #def;
+            text-decoration: none;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0d1117;
+                color: #e6edf3;
+            }
+            
+            .page__title {
+                color: #fff;
+            }
+            
+            .page__lead {
+                color: #8b949e;
+            }
+            
+            .content-item {
+                background-color: #21262d;
+                border-color: #30363d;
+            }
+            
+            .content-item .date {
+                color: #8b949e;
+            }
+            
+            .content-item .source {
+                color: #8b949e;
+            }
+            
+            .content-item .summary {
+                color: #e6edf3;
+            }
+            
+            .content-item .questions {
+                background-color: #161b22;
+                border-left-color: #58a6ff;
+            }
+            
+            .content-item .questions strong {
+                color: #58a6ff;
+            }
+            
+            .content-item .source-link a {
+                background-color: #0d1117;
+                color: #58a6ff;
+            }
+            
+            .content-item .source-link a:hover {
+                background-color: #21262d;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            #contents-section {
+                margin: 0 10px;
+            }
+            
+            .content-item {
+                padding: 15px;
+            }
+            
+            .page__header {
+                margin-bottom: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="page__header">
+            <h1 class="page__title">Learning Contents</h1>
+            <p class="page__lead">A collection of learning resources and insights</p>
+        </header>
+
+        <div id="contents-section">
+            <div class="content-item">
+                <h3>
+                    <a href="https://www.cloudflare.com/learning/ai/what-is-large-language-model/" target="_blank" rel="noopener noreferrer">
+                        What is an LLM (large language model)?
+                    </a>
+                </h3>
+                <p class="date">
+                    date: 2025-08-04
+                </p>
+                <p class="source">
+                    <strong>Source:</strong> Large language models (LLMs) are a type of AI that can recognize and generate text. They are trained on massive datasets and use deep learning, specifically transformer models, to understand the context and nuances of human language.
+                </p>
+                <p class="summary">
+                    <strong>Summary:</strong> Large language models (LLMs) are a type of AI that can recognize and generate text. They are trained on massive datasets and use deep learning, specifically transformer models, to understand the context and nuances of human language.
+                </p>
+                <div class="questions">
+                    <strong>Questions to explore:</strong>
+                    <ul>
+                        <li>What is the difference between an LLM and a chatbot?</li>
+                        <li>How are LLMs trained?</li>
+                        <li>What are the potential applications of LLMs?</li>
+                        <li>What are the ethical concerns surrounding LLMs?</li>
+                    </ul>
+                </div>
+                <p class="source-link">
+                    <a href="https://www.cloudflare.com/learning/ai/what-is-large-language-model/" target="_blank" rel="noopener noreferrer">
+                        Read more at source
+                    </a>
+                </p>
+            </div>
+
+            <div class="content-item">
+                <h3>
+                    <a href="https://en.wikipedia.org/wiki/Large_language_model" target="_blank" rel="noopener noreferrer">
+                        Large language model
+                    </a>
+                </h3>
+                <p class="date">
+                    date: 2025-08-04
+                </p>
+                <p class="source">
+                    <strong>Source:</strong> A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are largely used in generative chatbots such as ChatGPT, Gemini or Claude.
+                </p>
+                <p class="summary">
+                    <strong>Summary:</strong> A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are largely used in generative chatbots such as ChatGPT, Gemini or Claude.
+                </p>
+                <div class="questions">
+                    <strong>Questions to explore:</strong>
+                    <ul>
+                        <li>What are the main ethical issues associated with Large Language Models?</li>
+                        <li>What are the different methods used to evaluate the performance of LLMs?</li>
+                        <li>How has the architecture of LLMs evolved over time?</li>
+                        <li>What are some of the emergent abilities of large language models?</li>
+                    </ul>
+                </div>
+                <p class="source-link">
+                    <a href="https://en.wikipedia.org/wiki/Large_language_model" target="_blank" rel="noopener noreferrer">
+                        Read more at source
+                    </a>
+                </p>
+            </div>
+
+            <div class="content-item">
+                <h3>
+                    <a href="https://www.scmp.com/news/people-culture/environment/article/3315608/chinese-youth-make-sun-protection-masks-giant-lotus-leaves-ignite-online-hilarity" target="_blank" rel="noopener noreferrer">
+                        Chinese youth make sun protection masks from giant lotus leaves, ignite online hilarity
+                    </a>
+                </h3>
+                <p class="date">
+                    date: 2025-08-03
+                </p>
+                <p class="source">
+                    <strong>Source:</strong> Young people in China have taken self-made sun protection to the next level with their latest innovation: full-face masks made from lotus leaves. People from southern Chinese provinces, such as Zhejiang, Sichuan and Fujian, are making their own sun protection masks with lotus leaves they pick from roadside ponds. Viral videos show them covering their faces with the giant leaves, which are at least twice the size of their faces, using hats or helmets with straps to wrap and tighten the leaves. Eye and nose holes are poked through the leaves to allow seeing and breathing. One practitioner from Fujian province said he found them very effective, praising the sun protection tool as natural and free of charge.
+                </p>
+                <p class="summary">
+                    <strong>Summary:</strong> Chinese youth are creating innovative sun protection masks using giant lotus leaves picked from roadside ponds. These DIY masks, secured with hats or helmets, cover the entire face with holes for breathing and seeing. The trend has gone viral on social media, sparking humorous reactions online where users compare the wearers to mosquitoes or Pinocchio due to the protruding stems. While effective and free, some have raised safety concerns about wearing them while driving.
+                </p>
+                <div class="questions">
+                    <strong>Questions to explore:</strong>
+                    <ul>
+                        <li>What materials do Chinese youth use to make these sun protection masks?</li>
+                        <li>How do users secure the lotus leaves to their faces?</li>
+                        <li>What are the safety concerns raised about wearing lotus leaf masks?</li>
+                        <li>How has social media reacted to this trending sun protection method?</li>
+                    </ul>
+                </div>
+                <p class="source-link">
+                    <a href="https://www.scmp.com/news/people-culture/environment/article/3315608/chinese-youth-make-sun-protection-masks-giant-lotus-leaves-ignite-online-hilarity" target="_blank" rel="noopener noreferrer">
+                        Read more at source
+                    </a>
+                </p>
+            </div>
         </div>
-      {% endfor %}
-    {% else %}
-      <p>No contents available at the moment.</p>
-    {% endif %}
-  </div>
-</div>
-
-<style>
-/* Page-specific styles for contents */
-.page__header {
-  text-align: center;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #e1e4e8;
-}
-
-.page__title {
-  margin-bottom: 0.5em;
-  color: #2c3e50;
-}
-
-.page__lead {
-  color: #666;
-  font-size: 1.1em;
-  margin: 0;
-}
-
-#contents-section {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.content-item {
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #f8f9fa;
-  transition: all 0.3s ease;
-}
-
-.content-item:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-2px);
-}
-
-.content-item h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.3em;
-}
-
-.content-item h3 a {
-  text-decoration: none;
-  color: #0366d6;
-  font-weight: 600;
-}
-
-.content-item h3 a:hover {
-  text-decoration: underline;
-}
-
-.content-item .date {
-  color: #666;
-  font-size: 0.9em;
-  margin: 5px 0 15px 0;
-  font-weight: 500;
-}
-
-.content-item .source {
-  margin: 10px 0;
-  line-height: 1.6;
-  color: #555;
-  font-style: italic;
-}
-
-.content-item .summary {
-  margin: 15px 0;
-  line-height: 1.6;
-  color: #333;
-}
-
-.content-item .questions {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 6px;
-  border-left: 4px solid #0366d6;
-}
-
-.content-item .questions strong {
-  color: #0366d6;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.content-item .questions ul {
-  margin: 0;
-  padding-left: 20px;
-}
-
-.content-item .questions li {
-  margin-bottom: 8px;
-  line-height: 1.5;
-}
-
-.content-item .source-link {
-  margin-top: 20px;
-  text-align: right;
-}
-
-.content-item .source-link a {
-  color: #0366d6;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 16px;
-  background-color: #f1f8ff;
-  border-radius: 6px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.content-item .source-link a:hover {
-  background-color: #def;
-  text-decoration: none;
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .page__title {
-    color: #fff;
-  }
-  
-  .page__lead {
-    color: #8b949e;
-  }
-  
-  .content-item {
-    background-color: #21262d;
-    border-color: #30363d;
-  }
-  
-  .content-item .date {
-    color: #8b949e;
-  }
-  
-  .content-item .source {
-    color: #8b949e;
-  }
-  
-  .content-item .summary {
-    color: #e6edf3;
-  }
-  
-  .content-item .questions {
-    background-color: #161b22;
-    border-left-color: #58a6ff;
-  }
-  
-  .content-item .questions strong {
-    color: #58a6ff;
-  }
-  
-  .content-item .source-link a {
-    background-color: #0d1117;
-    color: #58a6ff;
-  }
-  
-  .content-item .source-link a:hover {
-    background-color: #21262d;
-  }
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  #contents-section {
-    margin: 0 10px;
-  }
-  
-  .content-item {
-    padding: 15px;
-  }
-  
-  .page__header {
-    margin-bottom: 1.5em;
-  }
-}
-</style>
+    </div>
+</body>
+</html>
