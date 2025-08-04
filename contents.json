@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2025-08-04",
+    "topic": "What is an LLM (large language model)?",
+    "URL": "https://www.cloudflare.com/learning/ai/what-is-large-language-model/",
+    "source": "Large language models (LLMs) are a type of AI that can recognize and generate text. They are trained on massive datasets and use deep learning, specifically transformer models, to understand the context and nuances of human language.",
+    "summary": "Large language models (LLMs) are a type of AI that can recognize and generate text. They are trained on massive datasets and use deep learning, specifically transformer models, to understand the context and nuances of human language.",
+    "questions": [
+      "What is the difference between an LLM and a chatbot?",
+      "How are LLMs trained?",
+      "What are the potential applications of LLMs?",
+      "What are the ethical concerns surrounding LLMs?"
+    ]
+  },
+  {
+    "date": "2025-08-04",
+    "topic": "Large language model",
+    "URL": "https://en.wikipedia.org/wiki/Large_language_model",
+    "source": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are largely used in generative chatbots such as ChatGPT, Gemini or Claude.",
+    "summary": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are largely used in generative chatbots such as ChatGPT, Gemini or Claude.",
+    "questions": [
+      "What are the main ethical issues associated with Large Language Models?",
+      "What are the different methods used to evaluate the performance of LLMs?",
+      "How has the architecture of LLMs evolved over time?",
+      "What are some of the emergent abilities of large language models?"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+database.csv 은 csv 형식의 파일이며 ,
+    - date : 날짜
+    - URL : 기사 URL
+    - topic : 기사 제목
+  을 가지고 있다. 
+그러나, 오늘 날짜의 기사가 없다면 가장 최신의 AI technology 1개를 database.csv에 추가를 한다. 
+  
+database.csv를 다시 읽는다.
+contents.json 이라는 파일을 읽어서, URL이 이미 포함된 것은 skip한다.
+contnets.json에 없는 URL인 경우에는 내용을 읽어와서 contents.json에 새로운 URL의 내용을 추가해서 저장해달라.
+    - date : 위의 날짜
+    - topic : 기사 제목  (topic이 없으면 기사에서 찾아서 넣어달라.)
+    - URL : 기사 URL
+    - source : URL있는 기사의 Text 부분만 발췌 (광고등은 제거하고 기사 부분만을 발췌해달라.)
+    - summary : 기사 내용을 summary해 달라. 최대 400자 이내로 summary해 달라. 
+    - questions : 최대 4개의 question을 만들어 달라.
+

@@ -1,0 +1,251 @@
+---
+layout: default
+title: "Learning Contents"
+permalink: /contents/
+---
+
+<div class="page">
+  <header class="page__header">
+    <h1 class="page__title">📚 Learning Contents</h1>
+    <p class="page__lead">A collection of learning resources and insights</p>
+  </header>
+
+  <div id="contents-section">
+    <div id="contents-container">
+      <p>Loading contents...</p>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('/contents.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('contents-container');
+      container.innerHTML = '';
+      
+      if (data.length === 0) {
+        container.innerHTML = '<p>No contents available at the moment.</p>';
+        return;
+      }
+      
+      data.forEach((item, index) => {
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'content-item';
+        
+        contentDiv.innerHTML = `
+          <h3>
+            <a href="${item.URL}" target="_blank" rel="noopener noreferrer">
+              ${item.topic}
+            </a>
+          </h3>
+          <p class="date">
+            📅 ${item.date}
+          </p>
+          <p class="summary">
+            <strong>Summary:</strong> ${item.summary}
+          </p>
+          <div class="questions">
+            <strong>🤔 Questions to explore:</strong>
+            <ul>
+              ${item.questions.map(q => `<li>${q}</li>`).join('')}
+            </ul>
+          </div>
+          <p class="source-link">
+            <a href="${item.URL}" target="_blank" rel="noopener noreferrer">
+              🔗 Read more at source
+            </a>
+          </p>
+        `;
+        
+        container.appendChild(contentDiv);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading contents:', error);
+      document.getElementById('contents-container').innerHTML = 
+        '<div class="error-message"><p>⚠️ Failed to load contents. Please try refreshing the page.</p></div>';
+    });
+});
+</script>
+
+<style>
+/* Page-specific styles for contents */
+.page__header {
+  text-align: center;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e1e4e8;
+}
+
+.page__title {
+  margin-bottom: 0.5em;
+  color: #2c3e50;
+}
+
+.page__lead {
+  color: #666;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+#contents-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-item {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.content-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.content-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.content-item h3 a {
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.content-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.content-item .date {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0 15px 0;
+  font-weight: 500;
+}
+
+.content-item .summary {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.content-item .questions {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  border-left: 4px solid #0366d6;
+}
+
+.content-item .questions strong {
+  color: #0366d6;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.content-item .questions ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.content-item .questions li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.content-item .source-link {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.content-item .source-link a {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: #f1f8ff;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.content-item .source-link a:hover {
+  background-color: #def;
+  text-decoration: none;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  color: #856404;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .page__title {
+    color: #fff;
+  }
+  
+  .page__lead {
+    color: #8b949e;
+  }
+  
+  .content-item {
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+  
+  .content-item .date {
+    color: #8b949e;
+  }
+  
+  .content-item .summary {
+    color: #e6edf3;
+  }
+  
+  .content-item .questions {
+    background-color: #161b22;
+    border-left-color: #58a6ff;
+  }
+  
+  .content-item .questions strong {
+    color: #58a6ff;
+  }
+  
+  .content-item .source-link a {
+    background-color: #0d1117;
+    color: #58a6ff;
+  }
+  
+  .content-item .source-link a:hover {
+    background-color: #21262d;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #contents-section {
+    margin: 0 10px;
+  }
+  
+  .content-item {
+    padding: 15px;
+  }
+  
+  .page__header {
+    margin-bottom: 1.5em;
+  }
+}
+</style>
