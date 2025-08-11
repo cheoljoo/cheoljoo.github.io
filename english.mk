@@ -96,6 +96,7 @@ git-push:
 	@echo "🚀 Pushing changes to GitHub..."
 	@/bin/bash -i -c "source ~/.bashrc && cheoljoopushgithub"
 	@echo "✅ Git push completed"
+	@echo "✅ URL : https://cheoljoo.github.io/contents2"
 
 # Force clean - removes repository directory
 .PHONY: clean
