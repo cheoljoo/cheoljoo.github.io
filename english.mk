@@ -23,6 +23,7 @@ update: backup clone-or-pull generate-content copy-content cleanup git-commit gi
 # Create backup of current contents2.html
 .PHONY: backup
 backup:
+	@rm -rf english
 	@echo "🔄 Creating backup of current $(TARGET_FILE)..."
 	@mkdir -p $(BACKUP_DIR)
 	@if [ -f $(TARGET_FILE) ]; then \
@@ -53,11 +54,8 @@ generate-content:
 		echo "❌ Repository directory $(REPO_DIR) not found"; \
 		exit 1; \
 	fi
-	@echo "📝 Running 'make prompt' in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && make prompt || (echo "❌ 'make prompt' failed" && exit 1)
-	@echo "✅ 'make prompt' completed successfully"
 	@echo "🔨 Running 'make' in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && make recent || (echo "❌ 'make' failed" && exit 1)
+	@cd $(REPO_DIR) && make || (echo "❌ 'make' failed" && exit 1)
 	@echo "✅ 'make' completed successfully"
 	@echo "📝 Committing changes in $(REPO_DIR)..."
 	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && git add -A && git commit -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] English content generation'"
