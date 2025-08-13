@@ -58,7 +58,7 @@ generate-content:
 	@cd $(REPO_DIR) && make || (echo "❌ 'make' failed" && exit 1)
 	@echo "✅ 'make' completed successfully"
 	@echo "📝 Committing changes in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && git add -A && git commit -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] English content generation'"
+	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] english content generation'"
 	@echo "🚀 Pushing changes in $(REPO_DIR)..."
 	@cd $(REPO_DIR) && /bin/bash -i -c "source ~/.bashrc && cheoljoopushgithub"
 	@echo "✅ English repository updated successfully"
@@ -87,7 +87,7 @@ cleanup:
 .PHONY: git-commit
 git-commit:
 	@echo "📝 Committing changes with today's date..."
-	@/bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] English content update'"
+	@/bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] cheoljoo.github.io english content update'"
 	@echo "✅ Git commit completed"
 
 # Git push using cheoljoopushgithub alias
