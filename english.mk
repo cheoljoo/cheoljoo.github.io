@@ -23,7 +23,6 @@ update: backup clone-or-pull generate-content copy-content cleanup git-commit gi
 # Create backup of current contents2.html
 .PHONY: backup
 backup:
-	@rm -rf english
 	@echo "🔄 Creating backup of current $(TARGET_FILE)..."
 	@mkdir -p $(BACKUP_DIR)
 	@if [ -f $(TARGET_FILE) ]; then \
