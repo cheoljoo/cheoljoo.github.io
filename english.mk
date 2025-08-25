@@ -37,6 +37,10 @@ backup:
 .PHONY: clone-or-pull
 clone-or-pull:
 	@echo "🔄 Updating English repository..."
+	@if [ ! -f gemini.key ]; then \
+		echo "gemini.key 파일이 없습니다. vi로 파일을 만드세요."; \
+		vi gemini.key; \
+	fi
 	@if [ -d $(REPO_DIR) ]; then \
 		echo "📁 Repository exists, pulling latest changes..."; \
 		cd $(REPO_DIR) && git pull origin main; \
@@ -44,6 +48,7 @@ clone-or-pull:
 		echo "📥 Cloning repository..."; \
 		git clone $(REPO_URL); \
 	fi
+	cp gemini.key $(REPO_DIR)
 	@echo "✅ Repository updated successfully"
 
 # Generate content using make prompt and make
