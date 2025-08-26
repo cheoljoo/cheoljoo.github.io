@@ -15,7 +15,8 @@ all: update
 
 # Main update process
 .PHONY: update
-update: backup clone-or-pull generate-content copy-content cleanup git-commit git-push
+#update: backup clone-or-pull generate-content copy-content cleanup git-commit git-push
+update: backup clone-or-pull generate-content copy-content git-commit git-push
 	@echo "✅ English content update completed successfully!"
 	@echo "📄 Updated file: $(TARGET_FILE)"
 	@echo "💾 Backup saved: $(BACKUP_DIR)/$(TARGET_FILE).$(TIMESTAMP)"
@@ -91,16 +92,17 @@ cleanup:
 .PHONY: git-commit
 git-commit:
 	@echo "📝 Committing changes with today's date..."
-	@/bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] cheoljoo.github.io english content update'"
+	/bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] cheoljoo.github.io english content update'"
 	@echo "✅ Git commit completed"
 
 # Git push using cheoljoopushgithub alias
 .PHONY: git-push
 git-push:
 	@echo "🚀 Pushing changes to GitHub..."
-	@/bin/bash -i -c "source ~/.bashrc && cheoljoopushgithub"
+	/bin/bash -i -c "source ~/.bashrc && cheoljoopushgithub"
 	@echo "✅ Git push completed"
 	@echo "✅ URL : https://cheoljoo.github.io/contents2"
+	@echo "✅ URL : https://cheoljoo.github.io/english.html"
 
 # Force clean - removes repository directory
 .PHONY: clean
