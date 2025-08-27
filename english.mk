@@ -65,7 +65,7 @@ generate-content:
 	@echo "📝 Committing changes in $(REPO_DIR)..."
 	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] english content generation'"
 	@echo "🚀 Pushing changes in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && /bin/bash -i -c "source ~/.bashrc && cheoljoopushgithub"
+	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && cheoljoopushgithub"
 	@echo "✅ English repository updated successfully"
 
 # Copy generated content to target file
@@ -99,7 +99,7 @@ git-commit:
 .PHONY: git-push
 git-push:
 	@echo "🚀 Pushing changes to GitHub..."
-	/bin/bash -i -c "source ~/.bashrc && cheoljoopushgithub"
+	/bin/bash -c "source ~/.bashrc && cheoljoopushgithub"
 	@echo "✅ Git push completed"
 	@echo "✅ URL : https://cheoljoo.github.io/contents2"
 	@echo "✅ URL : https://cheoljoo.github.io/english.html"
