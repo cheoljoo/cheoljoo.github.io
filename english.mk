@@ -66,7 +66,7 @@ generate-content:
 	@echo "📝 Committing changes in $(REPO_DIR)..."
 	-cd $(REPO_DIR) && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] english content generation'
 	@echo "🚀 Pushing changes in $(REPO_DIR)..."
-	-cd $(REPO_DIR) && source ~/bashrc && cheoljoopushgithub
+	-bash -i -c 'cd $(REPO_DIR) && source ~/bashrc && cheoljoopushgithub'
 	@echo "✅ English repository updated successfully"
 
 # Copy generated content to target file
@@ -100,7 +100,7 @@ git-commit:
 .PHONY: git-push
 git-push:
 	@echo "🚀 Pushing changes to GitHub..."
-	-source ~/bashrc && cheoljoopushgithub
+	-bash -i -c 'source ~/bashrc && cheoljoopushgithub'
 	@echo "✅ Git push completed"
 	@echo "✅ URL : https://cheoljoo.github.io/contents2"
 	@echo "✅ URL : https://cheoljoo.github.io/english.html"
@@ -213,3 +213,9 @@ check-deps:
 	@command -v git >/dev/null 2>&1 || (echo "❌ git is required but not installed" && exit 1)
 	@command -v make >/dev/null 2>&1 || (echo "❌ make is required but not installed" && exit 1)
 	@echo "✅ All dependencies are available"
+
+t:
+	@echo "✅ alias test!"
+	-source ~/bashrc && alias
+	bash -i -c 'cd english && source ~/bashrc && cheoljoopushgithub'
+
