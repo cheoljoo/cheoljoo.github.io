@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 # English Content Update Makefile
 # This makefile automates the process of updating contents2.html with latest English learning content
 
@@ -63,9 +64,9 @@ generate-content:
 	@cd $(REPO_DIR) && make || (echo "❌ 'make' failed" && exit 1)
 	@echo "✅ 'make' completed successfully"
 	@echo "📝 Committing changes in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] english content generation'"
+	-cd $(REPO_DIR) && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] english content generation'
 	@echo "🚀 Pushing changes in $(REPO_DIR)..."
-	@cd $(REPO_DIR) && /bin/bash -c "source ~/.bashrc && cheoljoopushgithub"
+	-cd $(REPO_DIR) && source ~/bashrc && cheoljoopushgithub
 	@echo "✅ English repository updated successfully"
 
 # Copy generated content to target file
@@ -92,14 +93,14 @@ cleanup:
 .PHONY: git-commit
 git-commit:
 	@echo "📝 Committing changes with today's date..."
-	/bin/bash -c "source ~/.bashrc && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] cheoljoo.github.io english content update'"
+	-git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] cheoljoo.github.io english content update'
 	@echo "✅ Git commit completed"
 
 # Git push using cheoljoopushgithub alias
 .PHONY: git-push
 git-push:
 	@echo "🚀 Pushing changes to GitHub..."
-	/bin/bash -c "source ~/.bashrc && cheoljoopushgithub"
+	-source ~/bashrc && cheoljoopushgithub
 	@echo "✅ Git push completed"
 	@echo "✅ URL : https://cheoljoo.github.io/contents2"
 	@echo "✅ URL : https://cheoljoo.github.io/english.html"
