@@ -14,6 +14,11 @@ TIMESTAMP = $(shell date +%Y%m%d_%H%M%S)
 .PHONY: all
 all: update
 
+cron: backup clone-or-pull generate-content-cron copy-content git-commit git-push
+	@echo "✅ [CRON] English content update completed successfully!"
+	@echo "📄 [CRON] Updated file: $(TARGET_FILE)"
+	@echo "💾 [CRON] Backup saved: $(BACKUP_DIR)/$(TARGET_FILE).$(TIMESTAMP)"
+
 # Main update process
 .PHONY: update
 #update: backup clone-or-pull generate-content copy-content cleanup git-commit git-push
@@ -53,6 +58,20 @@ clone-or-pull:
 	@echo "✅ Repository updated successfully"
 
 # Generate content using make prompt and make
+generate-content-cron:
+	@echo "🔄 [CRON] Generating English content..."
+	@if [ ! -d $(REPO_DIR) ]; then \
+		echo "❌ [CRON] Repository directory $(REPO_DIR) not found"; \
+		exit 1; \
+	fi
+	@echo "🔨 [CRON] Running 'make cron' in $(REPO_DIR)..."
+	@cd $(REPO_DIR) && make cron || (echo "❌ 'make cron' failed" && exit 1)
+	@echo "✅ [CRON] 'make cron' completed successfully"
+	@echo "📝 [CRON] Committing changes in $(REPO_DIR)..."
+	-cd $(REPO_DIR) && git commit -a -m '[$(shell date +%Y-%m-%d_%H:%M:%S)] english content generation'
+	@echo "🚀 [CRON] Pushing changes in $(REPO_DIR)..."
+	-bash -i -c 'cd $(REPO_DIR) && source ~/bashrc && cheoljoopushgithub'
+
 .PHONY: generate-content
 generate-content:
 	@echo "🔄 Generating English content..."
