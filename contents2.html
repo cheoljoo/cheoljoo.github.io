@@ -225,6 +225,381 @@
 
     <article class="article">
         <div class="article-header">
+            <div class="article-date">2026년 01월 12일</div>
+            <h2 class="article-title">Google removes AI Overviews for certain medical queries</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Following
+an investigation by the Guardian
+that found Google AI Overviews offering misleading information in response to certain health-related queries, the company appears to have removed the AI Overviews for some of those queries.
+For example, the Guardian initially reported that when users asked “what is the normal range for liver blood tests,” they would be presented with numbers that did not account for factors such as nationality, sex, ethnicity, or age, potentially leading them to think their results were healthy when they were not.
+Now, the Guardian says
+AI Overviews have been removed
+from the results for “what is the normal range for liver blood tests” and “what is the normal range for liver function tests.” However, it found that variations on those queries, such as “lft reference range” or “lft test reference range,” could still lead to AI-generated summaries.
+When I tried those queries this morning — several hours after the Guardian published its story — none of them resulted in seeing AI Overviews, though Google still gave me the option to ask the same query in AI Mode. In several cases, the top result was actually the Guardian article about the removal.
+A Google spokesperson told the Guardian that the company does not “comment on individual removals within Search,” but that it works to “make broad improvements.” The spokesperson also said that an internal team of clinicians reviewed the queries highlighted by the Guardian and found “in many instances, the information was not inaccurate and was also supported by high quality websites.”
+TechCrunch has reached out to Google for additional comment. Last year, the company announced
+new features aimed at improving Google Search for healthcare use cases
+, including improved overviews and health-focused AI models.
+Vanessa Hebditch, the director of communications and policy at the British Liver Trust, told the Guardian that the removal is “excellent news,” but added, “Our bigger concern with all this is that it...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://techcrunch.com/2026/01/11/google-removes-ai-overviews-for-certain-medical-queries/">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main topic of the article?</li>
+                    <li>Can you elaborate on the key points mentioned?</li>
+                    <li>What are the implications of this information?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 01월 12일</div>
+            <h2 class="article-title">Why your LLM bill is exploding — and how semantic caching can cut it by 73%</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Featured
+Why your LLM bill is exploding — and how semantic caching can cut it by 73%
+Sreenivasa Reddy Hulebeedu Reddy
+January 10, 2026
+CleoP made with Midjourney
+Our LLM API bill was growing 30% month-over-month. Traffic was increasing, but not that fast. When I analyzed our query logs, I found the real problem: Users ask the same questions in different ways.
+&quot;What&#x27;s your return policy?,&quot; &quot;How do I return something?&quot;, and &quot;Can I get a refund?&quot; were all hitting our LLM separately, generating nearly identical responses, each incurring full API costs.
+Exact-match caching, the obvious first solution, captured only 18% of these redundant calls. The same semantic question, phrased differently, bypassed the cache entirely.
+So, I implemented semantic caching based on what queries mean, not how they&#x27;re worded. After implementing it, our cache hit rate increased to 67%, reducing LLM API costs by 73%. But getting there requires solving problems that naive implementations miss.
+Why exact-match caching falls short
+Traditional caching uses query text as the cache key. This works when queries are identical:
+# Exact-match caching
+cache_key = hash(query_text)
+if cache_key in cache:
+return cache[cache_key]
+But users don&#x27;t phrase questions identically. My analysis of 100,000 production queries found:
+Only 18%
+were exact duplicates of previous queries
+47%
+were semantically similar to previous queries (same intent, different wording)
+35%
+were genuinely novel queries
+That 47% represented massive cost savings we were missing. Each semantically-similar query triggered a full LLM call, generating a response nearly identical to one we&#x27;d already computed.
+Semantic caching architecture
+Semantic caching replaces text-based keys with embedding-based similarity lookup:
+class SemanticCache:
+def __init__(self, embedding_model, similarity_threshold=0.92):
+self.embedding_model = embedding_model
+self.threshold = similarity_threshold
+self.vector_store = VectorStore()
+# FAISS, Pinecone, etc.
+self.respon...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://venturebeat.com/orchestration/why-your-llm-bill-is-exploding-and-how-semantic-caching-can-cut-it-by-73">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main topic of the article?</li>
+                    <li>Can you elaborate on the key points mentioned?</li>
+                    <li>What are the implications of this information?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 01월 12일</div>
+            <h2 class="article-title">The oceans just keep getting hotter</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">“a bonkers, crazy warming year”
+The oceans just keep getting hotter
+For the eighth year in a row, the world’s oceans absorbed a record-breaking amount of heat in 2025.
+Molly Taft, WIRED.com
+–
+Jan 11, 2026 7:00 am
+|
+76
+Credit:
+
+          
+          Pierre Longnus/Getty Images
+Credit:
+
+          
+          Pierre Longnus/Getty Images
+Text
+        settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+*
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Since 2018, a group of researchers from around the world has crunched the numbers on how much heat the world’s
+oceans
+are
+absorbing
+each year. In 2025, their measurements broke records once again, making this the eighth year in a row that the world’s oceans have absorbed more heat than in the years before.
+The study, which was published Friday in the journal Advances in Atmospheric Science, found that the world’s oceans absorbed an additional 23 zettajoules’ worth of heat in 2025, the most in any year since modern measurements began in the 1960s. That’s significantly higher than the 16 additional zettajoules they absorbed in 2024. The research comes from a team of more than 50 scientists across the United States, Europe, and China.
+A joule is a common way to measure energy. A single joule is a relatively small unit of measurement—it’s
+about enough
+to power a tiny lightbulb for a second, or slightly heat a gram of water. But a zettajoule is one
+sextillion
+joules; numerically, the 23 zettajoules the oceans absorbed this year can be written out as 23,000,000,000,000,000,000,000.
+John Abraham, a professor of thermal science at the University of St. Thomas and one of the authors on the paper, says that he sometimes has trouble putting this number into contexts that laypeople understand. Abraham offers up a couple options. His favorite is comparing the energy stored in the ocean to the energy of atomic bombs: The 2025 warming, he says, is the energetic equivalent to 12 Hiroshima bombs exploding in ...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://arstechnica.com/science/2026/01/the-oceans-just-keep-getting-hotter/">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main topic of the article?</li>
+                    <li>Can you elaborate on the key points mentioned?</li>
+                    <li>What are the implications of this information?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 01월 12일</div>
+            <h2 class="article-title">Chicken versus traffic! My obsession with the world’s most addictive hopper</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Computing
+Internet
+Websites &amp; Apps
+Chicken versus traffic! My obsession with the world’s most addictive hopper
+Features
+By
+Paul Hatton
+published
+11 January 2026
+Homescreen Heroes: Crossy Road is an 8-bit endless hopper game that’s fun and free to play
+When you purchase through links on our site, we may earn an affiliate commission.
+Here’s how it works
+.
+(Image credit: Future / Paul Hatton)
+Share
+Share by:
+Copy link
+Facebook
+X
+Whatsapp
+Reddit
+Pinterest
+Flipboard
+Threads
+Share this article
+0
+Join the conversation
+Follow us
+Add us as a preferred source on Google
+It’s a new year, and that means resolving to do some things differently, but if there’s one resolution I’m not making, it’s giving up playing fun and addictive games on my phone. In this past year, I’ve spent many hours enjoying games like
+Two Dots
+,
+SimCity BuildIt,
+and
+Geometry Dash Lite
+. I still love those apps, but these past few weeks I’ve been hooked on the popular and extremely well-known
+Crossy Road
+.
+All the ‘80s arcade game lovers will see it as a homage to one of the greatest games ever made, the 1981 classic video game
+Frogger
+. The game requires users to direct frogs to their homes by jumping on floating logs, turtles, and alligators, all the while avoiding traffic or falling in the water. If you’re interested, you can play an emulation of
+Frogger over at Crazy Games
+. Warning: it’s seriously addictive.
+If you got distracted playing Frogger, hopefully I can turn your attention back to Crossy Road. For the uninitiated, Crossy Road is an 8-bit endless arcade hopper game where you have to guide your character of choice across freeways, railroads, rivers, and more. Sound simple? Don&#x27;t be so easily fooled!
+You may like
+I’ve reviewed over 50 apps this year and these are my top five
+I was spending too much time at my desk; that is, until I discovered this app
+Ditch the February resolution slump with this habit-tracking powerhouse
+Homescreen heroes
+This is part of a regular series of articles exploring th...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://www.techradar.com/computing/websites-apps/crossy-road">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main topic of the article?</li>
+                    <li>Can you elaborate on the key points mentioned?</li>
+                    <li>What are the implications of this information?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 01월 12일</div>
+            <h2 class="article-title">Google pulls AI overviews for some medical searches</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">News
+Close
+News
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All
+News
+AI
+Close
+AI
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All
+AI
+Science
+Close
+Science
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All
+Science
+Google pulls AI overviews for some medical searches
+Experts described the results as “alarming” and “dangerous.”
+Experts described the results as “alarming” and “dangerous.”
+by
+Terrence O&#x27;Brien
+Close
+Terrence O&#x27;Brien
+Weekend Editor
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by
+Terrence O&#x27;Brien
+Jan 11, 2026, 7:19 PM UTC
+Link
+Share
+Image: The Verge
+Terrence O&#x27;Brien
+Close
+Terrence O&#x27;Brien
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by
+Terrence O&#x27;Brien
+is the Verge’s weekend editor. He has over 18 years of experience, including 10 years as managing editor at Engadget.
+Earlier this month,
+The Guardian
+published an investigation that showed Google was serving up misleading and outright false information via its AI overviews in response to certain medical inquiries. Now those results appear to have been removed. According to the
+original report
+:
+In one case that experts described as “really dangerous”, Google wrongly advised people with pancreatic cancer to avoid high-fat foods. Experts said this was the exact opposite of what should be recommended, and may increase the risk of patients dying from the disease.
+In another “alarming” example, the company provided bogus information about crucial liver function tests, which could leave people with serious liver disease wrongly thinking they are healthy.
+As of this morning, the AI overviews for questions like “what is the normal range for liver blood tests?” have been
+disabled entirely
+. Google
+declined to comm...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://www.theverge.com/news/860356/google-pulls-alarming-dangerous-medical-ai-overviews">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main topic of the article?</li>
+                    <li>Can you elaborate on the key points mentioned?</li>
+                    <li>What are the implications of this information?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 01월 12일</div>
+            <h2 class="article-title">California&#x27;s governor plans to set aside $200 million for state EV tax credits</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Transportation
+EVs
+California&#x27;s governor plans to set aside $200 million for state EV tax credits
+Governor Gavin Newsom&#x27;s budget proposal is meant to continue the momentum of EV adoption across the state.
+Jackson Chen
+Contributing reporter
+Sun, January 11, 2026 at 7:44 PM UTC
+Add Engadget on Google
+Tesla
+The loss of the
+federal EV tax credits
+may have been a huge blow to prospective buyers, but California wants to fill that gap for its residents. Governor Gavin Newsom&#x27;s proposed budget for 2026-2027, which was released on Friday, includes a &quot;light-duty zero-emission vehicle (ZEV) incentive program&quot; that details a one-time infusion of $200 million.
+According to the
+budget summary
+, this incentive program is &quot;a critical part of the Administration&#x27;s strategy to keep ZEVs affordable and accessible for all.&quot; The proposed budget still has to make it through the state&#x27;s legislature later this year, but if passed, the new incentive would help continue the momentum of EV adoption across California. In the third quarter of 2025, the state saw almost
+30 percent
+of auto sales being EVs, according to the California Energy Commission.
+There are no details in the budget summary outlining how exactly the $200 million would break down on a per-vehicle basis, but
+USA Today
+reported that the rebate would be an &quot;on the hood&quot; instant discount for EVs. Previously, buyers would get up to $7,500 back in federal tax rebates on new EV purchases and up to $4,000 on used EVs. For California&#x27;s proposed incentives, the chairwoman of the California Air Resources Board, Lauren Sanchez, told
+USA Today
+that the state is still trying to figure out if it will offer tax credits for those who buy used EVs.
+Advertisement
+About our ads</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://www.engadget.com/transportation/evs/californias-governor-plans-to-set-aside-200-million-for-state-ev-tax-credits-194446449.html?src=rss">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main topic of the article?</li>
+                    <li>Can you elaborate on the key points mentioned?</li>
+                    <li>What are the implications of this information?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
             <div class="article-date">2026년 01월 11일</div>
             <h2 class="article-title">Indonesia blocks Grok over non-consensual, sexualized deepfakes</h2>
         </div>
@@ -338,208 +713,9 @@ The Leica Q3 Monochrom is a top digital camera for black-and-white photography p
             </div>
         </div>
     </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 01월 11일</div>
-            <h2 class="article-title">Amazfit’s Active 2 tracker and Blu-rays are this week’s best deals</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">This article, based on the provided text, primarily discusses [main subject derived from first 100 chars of source]. Key aspects include [detail 1 from source] and [detail 2 from source]. The overall context suggests [broader implication]. This summary is a concise overview, limited to 2000 characters, and is faithful to the original content.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://www.theverge.com/gadgets/859777/amazfit-active-2-tracker-4k-uhd-blu-ray-deal-sale">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the primary focus of the article regarding Gadgets
-Close
-Gadgets
-Posts from this topic will be added to your daily email digest and your homepage feed?</li>
-                    <li>Can you elaborate on the point about Follow
-Follow
-See All
-Gadgets
-Tech
-Close
-Tech
-Posts from this topic will be added to your daily email digest and your homepage feed?</li>
-                    <li>What are the potential implications mentioned concerning Follow
-Follow
-See All
-Tech
-Verge Shopping
-Close
-Verge Shopping
-Posts from this topic will be added to your daily email digest and your homepage feed?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 01월 11일</div>
-            <h2 class="article-title">An Instagram data breach reportedly exposed the personal info of 17.5 million users</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">This article, based on the provided text, primarily discusses [main subject derived from first 100 chars of source]. Key aspects include [detail 1 from source] and [detail 2 from source]. The overall context suggests [broader implication]. This summary is a concise overview, limited to 2000 characters, and is faithful to the original content.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://www.engadget.com/cybersecurity/an-instagram-data-breach-reportedly-exposed-the-personal-info-of-175-million-users-192105616.html?src=rss">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the primary focus of the article regarding Cybersecurity
-An Instagram data breach reportedly exposed the personal info of 17?</li>
-                    <li>Can you elaborate on the point about 5 million users
-As spotted by Malwarebytes, the alleged leak includes usernames, email addresses, phone numbers and more?</li>
-                    <li>What are the potential implications mentioned concerning Jackson Chen
-Contributing reporter
-Sat, January 10, 2026 at 7:21 PM UTC
-Add Engadget on Google
-Instagram
-If you received a bunch of password reset requests from Instagram recently, you&#x27;re not alone?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 01월 09일</div>
-            <h2 class="article-title">GTMfund has rewritten the distribution playbook for the AI era</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">This is a placeholder summary of the article. It discusses the main points of the text provided. The length is kept under 2000 characters. This summary is generated based on the content: &#x27;Building software products has never been easier, so why are so many well-funded startups failing to take off no matter how good their product is? In this season finale episode of Build Mode, our gues...&#x27;.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://techcrunch.com/2026/01/08/gtmfund-has-rewritten-the-distribution-playbook-for-the-ai-era/">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main topic of the article?</li>
-                    <li>What are the key arguments presented?</li>
-                    <li>What are the implications of the information discussed?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 01월 09일</div>
-            <h2 class="article-title">Claude Code 2.1.0 arrives with smoother workflows and smarter agents</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">This is a placeholder summary of the article. It discusses the main points of the text provided. The length is kept under 2000 characters. This summary is generated based on the content: &#x27;Featured
-Claude Code 2.1.0 arrives with smoother workflows and smarter agents
-Carl Franzen
-January 8, 2026
-Credit: VentureBeat made with Google Gemini 3 Pro Image / Nano Banana Pro
-Anthropic has
-relea...&#x27;.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://venturebeat.com/orchestration/claude-code-2-1-0-arrives-with-smoother-workflows-and-smarter-agents">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main topic of the article?</li>
-                    <li>What are the key arguments presented?</li>
-                    <li>What are the implications of the information discussed?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 01월 09일</div>
-            <h2 class="article-title">These dogs eavesdrop on their owners to learn new words</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">This is a placeholder summary of the article. It discusses the main points of the text provided. The length is kept under 2000 characters. This summary is generated based on the content: &#x27;good doggies
-These dogs eavesdrop on their owners to learn new words
-“Under the right conditions, some dogs present behaviors strikingly similar to those of young children.”
-Jennifer Ouellette
-–
-Jan 8...&#x27;.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://arstechnica.com/science/2026/01/these-dogs-eavesdrop-on-their-owners-to-learn-new-words/">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main topic of the article?</li>
-                    <li>What are the key arguments presented?</li>
-                    <li>What are the implications of the information discussed?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 01월 09일</div>
-            <h2 class="article-title">The iPhone 4 is the classic camera phone that retro lovers can&#x27;t get enough of — but don&#x27;t skip these essential security tips</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">This is a placeholder summary of the article. It discusses the main points of the text provided. The length is kept under 2000 characters. This summary is generated based on the content: &#x27;Phones
-iPhone
-The iPhone 4 is the classic camera phone that retro lovers can&#x27;t get enough of — but don&#x27;t skip these essential security tips
-Features
-By
-Jamie Richards
-published
-8 January 2026
-Retro re...&#x27;.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://www.techradar.com/phones/iphone/the-iphone-4-is-the-classic-camera-phone-that-retro-lovers-cant-get-enough-of-but-dont-skip-these-essential-security-tips">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main topic of the article?</li>
-                    <li>What are the key arguments presented?</li>
-                    <li>What are the implications of the information discussed?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
     
     <div class="footer">
-        <p>이 문서는 2026년 01월 11일 05:32에 생성되었습니다.</p>
+        <p>이 문서는 2026년 01월 12일 05:33에 생성되었습니다.</p>
         <p>총 10개의 기사가 포함되어 있습니다.</p>
     </div>
 
