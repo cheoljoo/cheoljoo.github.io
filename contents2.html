@@ -225,6 +225,392 @@
 
     <article class="article">
         <div class="article-header">
+            <div class="article-date">2026년 06월 21일</div>
+            <h2 class="article-title">In the Weights is your new AI-centric vanity search</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Anyone who’s Googled themselves recently knows that it doesn’t quite hit the way it used to. Sure, there’s
+everything going on with Google search itself
+, but there’s also an inescapable feeling that web search isn’t the canonical source of information that it used to be, with just as many people learning about you and me from chatbots.
+Thomas Dimson and Joey Flynn had a similar feeling, leading them to create
+In the Weights
+. The
+“weights”
+in question are the numerical parameters that shape an AI model’s training and output, so the website
+purports
+to measure how well “a model is able to recall someone without using tools like web search.”
+“Being in the weights means your existence was deemed important in the process of creating superhuman artificial intelligence,” the website says.
+To achieve this, In the Weights supposedly queries different models (including Grok, Gemini, multiple versions of GPT, Claude, and Llama, plus lesser known models) with a question similar to, “Who is &lt;name&gt;? Give up to 10 results, each with a short description and confidence.” It then “cluster[s] similar descriptions together and assign[s] a strength score.”
+Image Credits:
+In the Weights
+For example,
+this humble tech blogger
+received a strength score of 641, placing me in the top 6% of names. I was feeling pretty good until I saw that
+multiple
+TechCrunch
+colleagues
+scored even higher. And the
+leaderboard
+has been shifting as I write this post, with “Home Alone” star Macaulay Culkin currently in the top slot with a strength score of 988, followed by opera singer Luciano Pavarotti.
+The results also show which models returned answers for a given name, and they highlight potential hallucinations — apparently GPT-5.4 Mini says that Anthony Ha is an “ambiguous name form that could refer to multiple people with the initials A.H.A.”
+Asked why he built In the Weights, Dimson told TechCrunch via email that he and Flynn were looking to “get the creative juices flowing again” after leaving OpenA...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main point of the article regarding &#x27;In the Weights is your new AI-centric vanity search&#x27;?</li>
+                    <li>What are the key details or events mentioned in relation to &#x27;In the Weights is your new AI-centric vanity search&#x27;?</li>
+                    <li>What are the potential implications or future outlook discussed concerning &#x27;In the Weights is your new AI-centric vanity search&#x27;?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 06월 21일</div>
+            <h2 class="article-title">7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes
+Louis Columbus
+2:14 pm, PT, June 19, 2026
+VerntureBeat created with Gemini
+Your AI agent did exactly what it was designed to do. The framework underneath it just handed an attacker a shell on the box that holds your OpenAI key, your database credentials, and your CRM tokens.
+That is not a hypothetical. In a few months, three of the most widely deployed AI agent frameworks each turned a known, ordinary bug class into a way through.
+Check Point Research
+chained a SQL injection in LangGraph’s SQLite checkpointer to full remote code execution. Tenable and VulnCheck tracked a path traversal in Langflow’s file upload endpoint to active, in-the-wild RCE.
+Cyera
+documented a path traversal in LangChain-core’s prompt loader that reads your secrets off disk. Two paths to a shell, one to your keys. They are the same bug, wearing three frameworks.
+These frameworks became production infrastructure faster than anyone secured them. They store agent state, take file uploads, load prompt configs, and hold the credentials to databases, CRMs, and internal APIs. The edge tools watch traffic. The endpoint tools watch processes. Neither was built to treat an imported framework as a boundary worth guarding, and that blind spot is exactly where all three chains live, widening every week as these frameworks ship to production.
+The LangGraph chain, SQL injection to a Python shell
+Start with the one most teams pulled into production this quarter. LangGraph gives AI agents memory through checkpointers, the persistence layer that stores execution state. It has cleared over 50 million downloads a month. Yarden Porat of Check Point Research took that layer apart and found three vulnerabilities. Two of them chain to RCE.
+CVE-2025-67644
+, rated CVSS 7.3, is a SQL injection in the SQLite checkpointer. The function that builds the WHERE clause for checkpoint lookups drops user-controlled filter keys straight into t...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://venturebeat.com/security/7000-langflow-servers-under-attack-langgraph-langchain-same-holes">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main point of the article regarding &#x27;7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes&#x27;?</li>
+                    <li>What are the key details or events mentioned in relation to &#x27;7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes&#x27;?</li>
+                    <li>What are the potential implications or future outlook discussed concerning &#x27;7,000 Langflow servers are under attack. LangGraph and LangChain have the same holes&#x27;?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 06월 21일</div>
+            <h2 class="article-title">The UK will scan asylum-seekers’ faces for age checks—despite knowing the tech is flawed</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Cognitec bias
+The UK will scan asylum-seekers’ faces for age checks—despite knowing the tech is flawed
+Tests of age-verification technology show the risks of life-altering errors.
+Matt Burgess, Maddy Varner, May Bulman, Gabriel Geiger, WIRED.com
+–
+Jun 20, 2026 7:15 am
+|
+74
+The arrivals hall and visa area with the automated biometric passport control entry gates at the the terminal of London Stansted Airport STN in  England, United Kingdom on September 6, 2026.
+Credit:
+Nicolas Economou/NurPhoto via Getty Images
+The arrivals hall and visa area with the automated biometric passport control entry gates at the the terminal of London Stansted Airport STN in  England, United Kingdom on September 6, 2026.
+Credit:
+Nicolas Economou/NurPhoto via Getty Images
+Text
+        settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+*
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Age verification is
+consuming the Internet
+. From social media bans in Australia to porn restrictions in
+half of US states
+, for many having to prove their age to access websites is becoming an
+everyday requirement
+. But one of the key technologies underpinning many of these age checks is about to seep into the offline world—with potentially life-changing consequences for people having their age predicted by AI.
+Starting next year, the British government is planning to introduce facial age estimation—where AI scans your face and
+suggests how old you are
+—to help determine the age of asylum seekers arriving at the United Kingdom’s border. The move is believed to be the first time that a so-called facial age estimation (FAE) system has been used in this way. Many asylum seekers arriving in the UK will not have documents proving their age, and if children are incorrectly classed as adults, they can be stripped of some legal protections and placed in adult-only detention centers.
+An investigation by WIRED and
+Lighthouse Reports
+, in collaboration with The Independent, has obtai...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://arstechnica.com/tech-policy/2026/06/the-uk-will-scan-asylum-seekers-faces-for-age-checks-despite-knowing-the-tech-is-flawed/">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main point of the article regarding &#x27;The UK will scan asylum-seekers’ faces for age checks—despite knowing the tech is flawed&#x27;?</li>
+                    <li>What are the key details or events mentioned in relation to &#x27;The UK will scan asylum-seekers’ faces for age checks—despite knowing the tech is flawed&#x27;?</li>
+                    <li>What are the potential implications or future outlook discussed concerning &#x27;The UK will scan asylum-seekers’ faces for age checks—despite knowing the tech is flawed&#x27;?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 06월 21일</div>
+            <h2 class="article-title">Already watched the Sugar season 2 premiere? Here are 3 more gritty Apple TV crime shows to satisfy your inner sleuth</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Streaming
+Apple TV
+Already watched the Sugar season 2 premiere? Here are 3 more gritty Apple TV crime shows to satisfy your inner sleuth
+Features
+By
+Lucy Buglass
+published
+20 June 2026
+Time to whip out your magnifying glass and solve some mysteries
+When you purchase through links on our site, we may earn an affiliate commission.
+Here’s how it works
+.
+(Image credit: Apple TV Plus)
+Copy link
+Facebook
+X
+Whatsapp
+Reddit
+Pinterest
+Flipboard
+Threads
+Email
+Share this article
+0
+Join the conversation
+Follow us
+Add us as a preferred source on Google
+Newsletter
+Subscribe to our newsletter
+Sugar
+season 2
+has arrived on
+Apple TV
+after a two-year break. The first episode is streaming now, but you&#x27;ll have to wait a week for the next one to drop.
+Fortunately, there&#x27;s a lot of great crime shows to tide you over until then. If you can&#x27;t get enough of the genre, I&#x27;ve picked out three of my favorites that are widely available to stream on
+Apple
+TV, and you can even binge-watch if that&#x27;s your thing.
+Make the most of your
+Apple TV subscription
+and check out these three detective shows now.
+Latest Videos From
+Watch full video here:
+Presumed Innocent
+Presumed Innocent — Official Trailer | Apple TV - YouTube
+Watch On
+Creator:
+David E. Kelley
+Cast:
+Jake Gyllenhaal, Ruth Negga, Bill Camp, O-T Fagbenle, Chase Infiniti, Nana Mensah, Renate Reinsve
+Seasons:
+2
+Age Rating:
+TV-MA
+David E. Kelley is on a roll with Apple TV shows, as he&#x27;s the genius behind recent comedy hit
+Margo&#x27;s Got Money Troubles
+.
+If you haven&#x27;t seen
+Presumed Innocent
+yet, this is also well worth your time.
+You may like
+What is the release date for Sugar season 2 on Apple TV?
+Sugar season 2 dials up the Old Hollywood vibes for a sophisticated Apple TV sequel — but I would&#x27;ve loved more focus on season 1&#x27;s big twist
+Best dark comedies like Netflix&#x27;s Beef season 2 to stream in May 2026
+Presumed Innocent
+follows prosecutor Rusty (Jake Gyllenhaal), who becomes the prime suspect in the gruesome murder of his colleague and secret m...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://www.techradar.com/streaming/apple-tv-plus/already-watched-the-sugar-season-2-premiere-here-are-3-more-gritty-apple-tv-crime-shows-to-satisfy-your-inner-sleuth">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main point of the article regarding &#x27;Already watched the Sugar season 2 premiere? Here are 3 more gritty Apple TV crime shows to satisfy your inner sleuth&#x27;?</li>
+                    <li>What are the key details or events mentioned in relation to &#x27;Already watched the Sugar season 2 premiere? Here are 3 more gritty Apple TV crime shows to satisfy your inner sleuth&#x27;?</li>
+                    <li>What are the potential implications or future outlook discussed concerning &#x27;Already watched the Sugar season 2 premiere? Here are 3 more gritty Apple TV crime shows to satisfy your inner sleuth&#x27;?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 06월 21일</div>
+            <h2 class="article-title">The Atlantic created a searchable database of the music used to train AI</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">AI
+Close
+AI
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All
+AI
+Entertainment
+Close
+Entertainment
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All
+Entertainment
+News
+Close
+News
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All
+News
+The Atlantic created a searchable database of the music used to train AI
+Millions of tracks are freely available in datasets, even if they’re not supposed to be.
+Millions of tracks are freely available in datasets, even if they’re not supposed to be.
+by
+Terrence O&#x27;Brien
+Close
+Terrence O&#x27;Brien
+Weekend Editor
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by
+Terrence O&#x27;Brien
+Jun 20, 2026, 6:46 PM UTC
+Link
+Share
+Gift
+Image: Cath Virginia / The Verge
+Part Of
+All the latest in AI ‘music’
+see all updates
+Terrence O&#x27;Brien
+Close
+Terrence O&#x27;Brien
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by
+Terrence O&#x27;Brien
+is the Verge’s weekend editor. He’s covered the tech industry for over 18 years and knows a thing or two about synths.
+Atlantic
+reporter Alex Reisner recently uncovered
+four datasets
+of music being used to train
+AI models
+and made them
+fully searchable
+for the public. Two of the sets are absolutely enormous at 12 million and 9 million tracks. The other two are much smaller, but still represent a significant amount of training data at over 100,000 songs each.
+According to Reisner, the sets have been downloaded thousands of times and, while it’s impossible to know exactly who has used them,
+Google
+and
+Stability
+have both confirmed they have in research papers. Some of the sources, like the
+Free Music Archive
+dataset, are free to stream for personal use but require licensing for commercial applications.
+While the datasets are freely availab...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main point of the article regarding &#x27;The Atlantic created a searchable database of the music used to train AI&#x27;?</li>
+                    <li>What are the key details or events mentioned in relation to &#x27;The Atlantic created a searchable database of the music used to train AI&#x27;?</li>
+                    <li>What are the potential implications or future outlook discussed concerning &#x27;The Atlantic created a searchable database of the music used to train AI&#x27;?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 06월 21일</div>
+            <h2 class="article-title">NASA is testing a rover that can drive faster and lift its wheels to climb obstacles</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Tomorrow
+Space
+NASA is testing a rover that can drive faster and lift its wheels to climb obstacles
+The space agency shared footage of tests with its Ernest prototype rover.
+By
+Cheyenne MacDonald
+June 20, 2026 2:52 pm EST
+NASA/JPL
+NASA&#x27;s Mars rovers have accomplished a whole lot since the first one landed on the red planet in the late &#x27;90s, but even the latest members of the fleet still have plenty of limitations. For one, they&#x27;re very slow; Perseverance, which NASA considers a &quot;standout,&quot; achieves a top speed of just under .1 mph on flat ground. On top of that, the rough terrain is
+hard on the rovers&#x27; wheels
+, and steep slopes with hazards like rocks and sand pose a real challenge, sometimes
+requiring long detours
+to reach certain targets. But this week,
+NASA
+showed off its progress on a prototype that boasts more advanced capabilities: the Exploration Rover for Navigating Extreme Sloped Terrain, or Ernest.
+The space agency has been testing Ernest in the Colorado Desert, exploring new approaches that could be used for future missions on Mars and the moon. Ernest has four wheels, in contrast to the current Mars&#x27; rovers&#x27; six, and is four feet long, though a version that would be used for an actual mission would be double the size. And, it can individually lift its wheels to step on or over obstacles. In the recent tests in the desert, the prototype drove for a total of over 37 hours across seven days, covering roughly 16 miles, according to NASA. It hit a top speed of about .6 mph.
+&quot;You could do a science road trip across the Moon — or Mars — with this vehicle,&quot; said James Keane, a JPL planetary scientist working on lunar missions. Going back to NASA&#x27;s Sojourner rover, the Mars rovers have relied on a passive suspension system, the rocker-bogie system, to keep the weight constant across their wheels. Now, though, engineers are trying out active suspension with Ernest to achieve greater mobility. &quot;Two powered joints in front articulate a gimbal that allows the rove...</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://www.engadget.com/2198367/nasa-is-testing-ernest-rover-that-can-drive-faster-and-lift-its-wheels-to-climb-obstacles/">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>What is the main point of the article regarding &#x27;NASA is testing a rover that can drive faster and lift its wheels to climb obstacles&#x27;?</li>
+                    <li>What are the key details or events mentioned in relation to &#x27;NASA is testing a rover that can drive faster and lift its wheels to climb obstacles&#x27;?</li>
+                    <li>What are the potential implications or future outlook discussed concerning &#x27;NASA is testing a rover that can drive faster and lift its wheels to climb obstacles&#x27;?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
             <div class="article-date">2026년 06월 19일</div>
             <h2 class="article-title">Snap spins off AI video team into new company, Dotmo, due to costs</h2>
         </div>
@@ -442,392 +828,9 @@ In a message cited by ...</div>
             </div>
         </div>
     </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 06월 19일</div>
-            <h2 class="article-title">Valve is so behind on Steam Controller orders that some won&amp;#8217;t ship until 2027</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">Gaming
-Close
-Gaming
-Posts from this topic will be added to your daily email digest and your homepage feed.
-Follow
-Follow
-See All
-Gaming
-Entertainment
-Close
-Entertainment
-Posts from this topic will be added to your daily email digest and your homepage feed.
-Follow
-Follow
-See All
-Entertainment
-News
-Close
-News
-Posts from this topic will be added to your daily email digest and your homepage feed.
-Follow
-Follow
-See All
-News
-Valve is so behind on Steam Controller orders that some won’t ship until 2027
-Any reservations made today ‘indicate a 2027 date for shipping.’
-Any reservations made today ‘indicate a 2027 date for shipping.’
-by
-Jay Peters
-Close
-Jay Peters
-Senior Reporter
-Posts from this author will be added to your daily email digest and your homepage feed.
-Follow
-Follow
-See All by
-Jay Peters
-Jun 18, 2026, 8:26 PM UTC
-Link
-Share
-Gift
-If you buy something from a Verge link, Vox Media may earn a commission.
-See our ethics statement.
-Part Of
-Steam Machines have returned: all the news about Valve’s new hardware universe
-see all updates
-Jay Peters
-Close
-Jay Peters
-Posts from this author will be added to your daily email digest and your homepage feed.
-Follow
-Follow
-See All by
-Jay Peters
-is a senior reporter covering technology, gaming, and more. He joined The Verge in 2019 after nearly two years at Techmeme.
-Valve has some good news and bad news about Steam Controllers. The good news: if you make a reservation for a Steam Controller, the company will now show you one of three estimates of when you’ll be able to actually order your gamepad: by September 2026, by December 2026, or sometime in 2027. The bad news: any reservations made today “indicate a 2027 date for shipping,”
-Valve says
-.
-“We have no plans to stop making Steam Controller,” according to Valve. “But as we look at the current demand compared to how many we know we can make by the end of the year, we want to manage expectations as much as we can with regards to when folks can expect to receive their order.”
-Va...</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://www.theverge.com/games/952582/valve-steam-controller-reservations-orders-behind-estimated-date">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main point of the article regarding &#x27;Valve is so behind on Steam Controller orders that some won&amp;#8217;t ship until 2027&#x27;?</li>
-                    <li>What are the key details or events mentioned in relation to &#x27;Valve is so behind on Steam Controller orders that some won&amp;#8217;t ship until 2027&#x27;?</li>
-                    <li>What are the potential implications or future outlook discussed concerning &#x27;Valve is so behind on Steam Controller orders that some won&amp;#8217;t ship until 2027&#x27;?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 06월 19일</div>
-            <h2 class="article-title">Rivian faces a class action lawsuit over self-driving in its early vehicles</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">News
-EVs and Transportation
-Rivian faces a class action lawsuit over self-driving in its early vehicles
-Plaintiffs claim the company overstated the capabilities of the R1T and R1S.
-By
-Anna Washenko
-June 18, 2026 3:42 pm EST
-Hiroshi-Mori-Stock/Shutterstock
-Rivian has been sued on allegations that it made misleading statements about the self-driving capabilities of its R1T truck and R1S SUV.
-According to the class action
-complaint
-brought by Rivian customers, the first-generation models of these vehicles are not capable of the offering the self-driving potential that the company had promised. The plaintiffs argued that Rivian represented that those early models would be capable of level 3 autonomous driving, meaning the vehicle would be able to steer, accelerate and break without driver action.
-&quot;In reality, Rivian manufactured its Gen 1 Vehicles without the hardware, cameras, sensors, and compute to enable hands-free driving and/or Level 3 autonomous operation,&quot; the complaint states. &quot;No software update — no matter how sophisticated — will enable its Gen 1 Vehicles to perform as advertised. Rivian unquestionably knew that its Gen 1 Vehicles would never be capable of Level 3 autonomy or &#x27;true hands-free driving&#x27; yet continued to tout the supposed capabilities of its vehicles to induce consumers to purchase them.&quot;
-Rivian introduced its &quot;
-universal hands-free driving
-&quot; software update late last year. The tech was made available for the company&#x27;s R2 collection of electric vehicles and the second generation of its R1 lineup.
-When contacted by
-TechCrunch
-, Rivian declined to offer comment on the pending case.</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://www.engadget.com/2197702/rivian-faces-a-class-action-lawsuit-over-self-driving-in-its-early-vehicles/">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main point of the article regarding &#x27;Rivian faces a class action lawsuit over self-driving in its early vehicles&#x27;?</li>
-                    <li>What are the key details or events mentioned in relation to &#x27;Rivian faces a class action lawsuit over self-driving in its early vehicles&#x27;?</li>
-                    <li>What are the potential implications or future outlook discussed concerning &#x27;Rivian faces a class action lawsuit over self-driving in its early vehicles&#x27;?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 06월 18일</div>
-            <h2 class="article-title">After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">In Brief
-Posted:
-1:24 PM PDT · June 17, 2026
-Image Credits:
-Joe Scarnici/Getty Images for Snap
-Lucas Ropek
-After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive
-Snap’s
-long-awaited AR glasses
-, Specs, didn’t have the best debut.
-The company’s stock
-hasn’t been on the healthiest trajectory
-lately. It’s dropped 30 percent over the past year. Following Specs’ launch, it sank more than 5 percent — falling from $5.86 a share on Tuesday to a low of $4.83 on Wednesday morning. As of this writing, the stock still hasn’t recovered the position it held prior to the announcement.
-The big concern surrounding Snap’s new smart glasses — which the company has been working on for over a decade — is the cost: the company maintains they will retail at nearly $2,200 apiece.
-It’s worthy of note that Snap’s core user demographic — teenagers — are not typically equipped with that kind of pocket change, leading onlookers to question the profitability path for the new product.
-Snap’s CEO, Evan Spiegel, did
-an interview
-with CNBC on Tuesday (during which he sported the new glasses) and, when questioned about the hefty price, responded: “The most important way to think of Specs is as a computer, and so they’re comparably priced to other high-end computers or high-end laptops.”
-Spiegel further justified the cost by saying that Specs occupies a unique space in the AR market between glasses like Meta’s Ray-Bans — which cost a lot less but provide significantly less compute power — and bulkier headsets like the Apple Vision Pro, which are powerful but very expensive.
-Spiegel said his product was both “highly wearable but also incredibly capable for immersive computing.”
-Topics
-AI
-,
-Hardware
-,
-SMART Glasses
-,
-Snap
-,
-specs
-June 18
-Los Angeles
-Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new c...</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://techcrunch.com/2026/06/17/after-unveiling-ridiculously-expensive-ar-glasses-snaps-stock-takes-a-dive/">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main point of the article regarding &#x27;After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive&#x27;?</li>
-                    <li>What are the key details or events mentioned in relation to &#x27;After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive&#x27;?</li>
-                    <li>What are the potential implications or future outlook discussed concerning &#x27;After unveiling ridiculously expensive AR glasses, Snap’s stock takes a dive&#x27;?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 06월 18일</div>
-            <h2 class="article-title">Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its token-burning problem</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">Featured
-Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its token-burning problem
-Michael Nuñez
-12:00 pm, PT, June 17, 2026
-Credit: Anthropic
-When
-Anthropic
-quietly released
-Claude Design
-in April as a &quot;
-research preview
-,&quot; it generated the kind of instant traction most product teams dream about: more than one million users in its first week. It also generated a problem. The tool consumed tokens so voraciously that a PCWorld reviewer
-burned through 80 percent
-of his weekly Claude Pro allowance in roughly 25 minutes, producing just three variations of a single webpage prototype. &quot;We&#x27;re talking another token-hungry Claude product here,&quot; the reviewer wrote, &quot;one that Pro users in particular will barely be able to use before burning through their usage limits.&quot;
-Two months later, Anthropic is shipping a substantially overhauled version of
-Claude Design
-that attempts to fix the consumption issue while simultaneously repositioning the product from a flashy demo into something far more strategically important: a design system compliance layer that connects to code, connects to the tools enterprises already use, and — critically — keeps everything on brand.
-The update, announced Wednesday, arrives at a moment when Anthropic is executing one of the most aggressive product expansions in the AI industry&#x27;s brief history. In the past ten weeks alone, the company has launched
-Claude Opus 4.8
-, released (and then suspended) the Mythos-class
-Fable 5 model
-, shipped ten agent templates for financial services, announced a
-multi-year alliance
-with DXC Technology to embed Claude inside the IT infrastructure of the world&#x27;s largest banks and airlines, rolled out
-Claude for Small Business
-with integrations into QuickBooks and PayPal, and published research showing that Claude Code users now average
-20 hours per week on the tool
-.
-Claude Design&#x27;s transformation from prototype toy to enterprise platform is the latest move in a comp...</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://venturebeat.com/technology/anthropic-ships-major-claude-design-overhaul-with-design-system-imports-code-round-trips-and-a-fix-for-its-token-burning-problem">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main point of the article regarding &#x27;Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its token-burning problem&#x27;?</li>
-                    <li>What are the key details or events mentioned in relation to &#x27;Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its token-burning problem&#x27;?</li>
-                    <li>What are the potential implications or future outlook discussed concerning &#x27;Anthropic ships major Claude Design overhaul with design system imports, code round-trips, and a fix for its token-burning problem&#x27;?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 06월 18일</div>
-            <h2 class="article-title">AI coding agents can autonomously direct robot training</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">How to train your robot
-AI coding agents taught robots how to install GPUs and cut zip-ties
-NVIDIA’s self-improvement program for robots enlists teams of AI coding agents.
-Jeremy Hsu
-–
-Jun 17, 2026 3:25 pm
-|
-14
-Teams of AI coding agents can train robots to do tasks such as inserting GPUs into motherboards.
-Credit:
-NVIDIA
-Teams of AI coding agents can train robots to do tasks such as inserting GPUs into motherboards.
-Credit:
-NVIDIA
-Text
-        settings
-Story text
-Size
-Small
-Standard
-Large
-Width
-*
-Standard
-Wide
-Links
-Standard
-Orange
-* Subscribers only
-Learn more
-Minimize to nav
-What happens when you give AI coding agents a lab full of robotic arms, some compute resources, and a “generous token budget” for teaching the robots various tasks? The agents can apparently figure out a training regimen that teaches the robots to successfully cut zip ties and even insert GPUs into thin sockets on motherboards.
-That glimpse into how AI can act in a fully autonomous way to automate robot training was made possible by a new agent harness framework—software that wraps around AI models to enable their use of various tools while also providing capabilities such as memory, context, constraint, and feedback loops. That agentic harness,
-called ENPIRE
-, was developed by robotics researchers at the NVIDIA GEAR (Generalist Embodied Agent Research) lab alongside collaborators from Carnegie Mellon University in Pittsburgh and the University of California, Berkeley.
-“A part of our NVIDIA GEAR lab now self-improves tirelessly overnight,” wrote Jim Fan, director of AI at NVIDIA, in a
-LinkedIn post
-. “We just read the reports in the morning.”
-Fan also jokingly described the goal of such AI-directed robot training, saying, “We all take a holiday and Jensen wouldn’t even notice,” in reference to Nvidia founder and CEO Jensen Huang. But it’s not only Nvidia robotics researchers who could benefit—Fan said the team would be open-sourcing everything so anyone can host their own “self-running robo...</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training/">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main point of the article regarding &#x27;AI coding agents can autonomously direct robot training&#x27;?</li>
-                    <li>What are the key details or events mentioned in relation to &#x27;AI coding agents can autonomously direct robot training&#x27;?</li>
-                    <li>What are the potential implications or future outlook discussed concerning &#x27;AI coding agents can autonomously direct robot training&#x27;?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 06월 18일</div>
-            <h2 class="article-title">How to watch Ghana vs Panama: Free Streams &amp; TV Channels for FIFA World Cup 2026</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">How to Watch
-How to Watch Sport
-How to Watch Football
-How to watch Ghana vs Panama: Free Streams &amp; TV Channels for FIFA World Cup 2026
-News
-By
-Krishi Chowdhary
-published
-17 June 2026
-Defeat isn&#x27;t an option for the Black Stars, who take on Los Canaleros in Toronto
-When you purchase through links on our site, we may earn an affiliate commission.
-Here’s how it works
-.
-(Image credit: Getty Images)
-Jump To:
-Free Streams
-Watch any Ghana vs Panama live stream
-US
-UK
-Australia
-Canada
-Match Info
-Copy link
-Facebook
-X
-Whatsapp
-Reddit
-Pinterest
-Flipboard
-Threads
-Email
-Share this article
-0
-Join the conversation
-Follow us
-Add us as a preferred source on Google
-Newsletter
-Subscribe to our newsletter
-Ghana vs Panama Kick-Off time: Wednesday, June 17 | 7pm ET / 12am BST (Thu) / 9am AEST (Thu)
-Watch free on
-ITV
-(UK) /
-SBS
-(AUS) /
-CazéTV&#x27;s YouTube
-(Brazil)
-Unlock your free streams with
-Norton VPN (60-day money back guarantee)
-Ghana will take on Panama in a must-win contest for both teams as they begin their respective
-FIFA World Cup 2026
-Group L campaigns in Toronto. A defeat would leave either side facing a daunting path, with upcoming matches against European heavyweights England and Croatia.
-Quarter-finalists in 2010, the Black Stars enter the match as favorites, particularly with Panama&#x27;s star midfielder Adalberto Carrasquilla reportedly nursing an injury and unlikely to be risked. Yet Ghana have had a difficult spell recently, highlighted by their failure to qualify for the most recent 24-team Africa Cup of Nations, for the first time in two decades.
-They then let go of coach Otto Addo and in April welcomed Carlos Queiroz, who returns to a World Cup dugout for the fifth successive tournament after coaching Portugal in 2010, and Iran in 2014, 2018 and 2022. Can he end Ghana&#x27;s six-match winless run? Queiroz will look to revive the form Ghana displayed during qualification, where they recorded eight wins, one draw, and only one loss. Much will depend on captain Jordan Ayew, who wi...</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://www.techradar.com/how-to-watch/football/ghana-vs-panama-world-cup-2026-free">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>What is the main point of the article regarding &#x27;How to watch Ghana vs Panama: Free Streams &amp; TV Channels for FIFA World Cup 2026&#x27;?</li>
-                    <li>What are the key details or events mentioned in relation to &#x27;How to watch Ghana vs Panama: Free Streams &amp; TV Channels for FIFA World Cup 2026&#x27;?</li>
-                    <li>What are the potential implications or future outlook discussed concerning &#x27;How to watch Ghana vs Panama: Free Streams &amp; TV Channels for FIFA World Cup 2026&#x27;?</li>
-                </ol>
-            </div>
-        </div>
-    </article>
     
     <div class="footer">
-        <p>이 문서는 2026년 06월 19일 05:34에 생성되었습니다.</p>
+        <p>이 문서는 2026년 06월 21일 05:33에 생성되었습니다.</p>
         <p>총 10개의 기사가 포함되어 있습니다.</p>
     </div>
 
