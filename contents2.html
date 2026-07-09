@@ -604,107 +604,118 @@ in 2022.</div>
     </article>
     <article class="article">
         <div class="article-header">
-            <div class="article-date">2026년 07월 07일</div>
-            <h2 class="article-title">Vercel CEO Guillermo Rauch on the fight to split off models from agents</h2>
+            <div class="article-date">2026년 07월 09일</div>
+            <h2 class="article-title">Meta enters the crowded AI coding battle with Muse Spark 1.1</h2>
         </div>
         
         <div class="article-content">
             <div class="section">
                 <h3 class="section-title">요약</h3>
-                <div class="summary">Summary Placeholder: Known for its cloud infrastructure that allows developers to deploy agents without managing servers,
-Vercel
-has quietly become one of the most central companies in AI software. The company currently sees 6 million deployments a day, half of them triggered by coding agents, and more than 1 trillion tokens flow through
-the company’s AI gateway
-daily.
-After the company’s ShipNYC conference last week, we sat down with Vercel CEO Guillermo Rauch for his take on this moment in AI, and how platform companies like Vercel end up competing with major labs. Here’s a lightly edited transcript.
-It feels like there’s a different energy in the community this year, fewer pilot programs and more focus on how to make things work well in practice. I’m sure you’ve seen that a lot with clients, but I’m curious what that journey has looked like within Vercel.
-Last year was about prototyping. The sky’s the limit, unleash the agents, everyone can build, and so on. We did that, and we learned a lot because we had hundreds of agents organically developed and deployed within the company, and then you started getting into the realities of agents in production, and some of the challenges.
-The biggest lesson for me was the home-run use cases, the two killer apps of agents. One is the coding agent, of course. That’s driving a lot of the token utilization in the world, but when you produce so much software, you need somewhere to put it. The second killer app of agents is the internal agent that helps you run the company. The challenge there is, how do you securely access data? How do you audit what the agent is doing? How do you get a trail of all of the tool calls and access controls that the agent had to incur in order to get a job done?
-To solve that, we came up with this framework called Eve, where you can lay out an agents’ instructions and skills in natural language. And another tool is Vercel Sandbox, where you put the agent in a little cage. It can have the free... [truncated]</div>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title"><a href="https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/">URL</a></h3>
-            </div>
-            
-            <div class="section">
-                <h3 class="section-title">관련 질문</h3>
-                <ol class="questions">
-                    <li>Question 1 Placeholder</li>
-                    <li>Question 2 Placeholder</li>
-                    <li>Question 3 Placeholder</li>
-                </ol>
-            </div>
-        </div>
-    </article>
-    <article class="article">
-        <div class="article-header">
-            <div class="article-date">2026년 07월 07일</div>
-            <h2 class="article-title">Tencent&#x27;s Apache-licensed Hy3 takes on GLM-5.2 at half the size — and wins everywhere except coding</h2>
-        </div>
-        
-        <div class="article-content">
-            <div class="section">
-                <h3 class="section-title">요약</h3>
-                <div class="summary">Summary Placeholder: Featured
-Tencent&#x27;s Apache-licensed Hy3 takes on GLM-5.2 at half the size — and wins everywhere except coding
-Sam Witteveen
-9:38 am, PT, July 6, 2026
-Made by VentureBeat with Nano Banana
-For the past year, the awkward secret of the open-weight model boom has been that many of the strongest Chinese releases were off-limits to a large slice of the enterprises most interested in them. License terms that excluded the European Union, the United Kingdom and South Korea meant legal teams killed deployments before engineering teams finished their evals — not just for companies headquartered there, but for any enterprise serving traffic into those regions. For IT teams weighing open models, the trade-offs are unusually explicit.
-Tencent just removed that obstacle. The company&#x27;s Hunyuan team released the full version of
-Hy3
-, a 295-billion-parameter Mixture-of-Experts (MoE) model with 21 billion active parameters, and — in a reversal from April&#x27;s preview release — shipped it under the permissive
-Apache 2.0
-license. The reaction from the open-model community was immediate, with researchers on X singling out the license change as the real headline, and one widely shared post arguing that if the scores hold up, Tencent has just become one of the leaders of open source. Tencent says it will be
-free on OpenRouter for two weeks
+                <div class="summary">Meta publicly launched a new version of Muse Spark on Thursday, a multimodal AI model designed for agentic coding that aims to compete with similar products offered by OpenAI and Anthropic.
+Spark 1.1, the first version of which
+was announced in April
+, can engage in multistep reasoning and handle complex processes, manage digital workflows, and deploy new features in enterprise systems, the company says.
+Meta is a bit behind its competitors here; Anthropic and OpenAI have
+offered similar models
+for quite some time. But that doesn’t mean Meta’s entry into the market isn’t a threat.
+An ongoing source of competitiveness within the AI industry remains the cost of usage, and Meta appears to be offering a competitive rate. Reuters
+reports that
+the company will charge $1.25 per million input tokens and $4.25 per million output tokens. That puts it in line with (albeit slightly above) Anthropic’s Claude Haiku 4.5 and OpenAI’s GPT-5.6 Luna.
+Meta’s pitch to users is Spark’s ability to handle large agentic workloads, fix bugs, and help with large code migrations — the kind of automation that enterprises are increasingly turning to AI companies to provide.
+“Muse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services,” the company
+wrote in a blog post
 .
-The scores are worth scrutinizing — and they don&#x27;t all point the same direction. But the more interesting story is what Tencent chose to lead with: reliability metrics and deployment economics aimed squarely at production use.
-From preview to product in ten weeks, shaped by 50 internal teams
-Hy3&#x27;s April preview was the first model of Tencent&#x27;s rebuilt pre-training and reinforcement learning infrastructure, shipped less than three months after the February rebuild. Chief AI Scientist Shunyu Yao framed the early open release as a deliberate move to gather feedback from developers and users before the official version — and Te... [truncated]</div>
+Meta has released a handful of foundation AI models over the past few years. The Muse Spark release was apparently important enough to compel CEO Mark Zuckerberg
+to post
+on X for the first time in three years. Zuckerberg’s last post was in July 2023, around the time the platform rebranded
+from Twitter to X
+.
+In his post, Zuckerberg called Spark “a strong agentic and coding model at a very low price,” noting that the model was “strongest at agentic performance, tool use, and computer use.”
+Zuckerberg also noted that there was “more to come soon” — implying that the company plans to release additional models.</div>
             </div>
             
             <div class="section">
-                <h3 class="section-title"><a href="https://venturebeat.com/technology/tencents-apache-licensed-hy3-takes-on-glm-5-2-at-half-the-size-and-wins-everywhere-except-coding">URL</a></h3>
+                <h3 class="section-title"><a href="https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/">URL</a></h3>
             </div>
             
             <div class="section">
                 <h3 class="section-title">관련 질문</h3>
                 <ol class="questions">
-                    <li>Question 1 Placeholder</li>
-                    <li>Question 2 Placeholder</li>
-                    <li>Question 3 Placeholder</li>
+                    <li>Based on the article about &#x27;Meta enters the crowded AI coding battle with Muse Spark 1.1&#x27;, what is the main challenge or development discussed?</li>
+                    <li>What are the key actors or entities involved in the &#x27;Meta enters the crowded AI coding battle with Muse Spark 1.1&#x27; context?</li>
+                    <li>What are the potential future impacts or implications of the &#x27;Meta enters the crowded AI coding battle with Muse Spark 1.1&#x27; as described?</li>
                 </ol>
             </div>
         </div>
     </article>
     <article class="article">
         <div class="article-header">
-            <div class="article-date">2026년 07월 07일</div>
-            <h2 class="article-title">What&#x27;s the oldest Americana flown in space?</h2>
+            <div class="article-date">2026년 07월 09일</div>
+            <h2 class="article-title">Enterprises using multiple AI models are underestimating failure rates by 2.25x</h2>
         </div>
         
         <div class="article-content">
             <div class="section">
                 <h3 class="section-title">요약</h3>
-                <div class="summary">Summary Placeholder: L+250 years and counting
-What is the oldest American object ever launched into space?
-From a Revolutionary War flag to the Statue of Liberty…
-Robert Pearlman
+                <div class="summary">Enterprises using multiple AI models are underestimating failure rates by 2.25x
+Ben Dickson
+11:46 am, PT, July 9, 2026
+Image credit: VentureBeat with ChatGPT
+A team routing queries across a coding specialist, a logic specialist, and a generalist model assumes each will cover the others&#x27; blind spots.
+A new study
+evaluating 67 frontier models from 21 providers shows that assumption is mathematically flawed — and the flaw has a name: the co-failure ceiling.
+The assumption works like this: as long as two models don&#x27;t usually fail on the exact same prompts, combining them is supposed to create a safety net against failures.
+The real limit on orchestration is not how often models disagree, but the percentage of prompts where every model in the pool gives the wrong answer at once. By ignoring the co-failure ceiling, enterprises are building complex, expensive routing infrastructure to chase performance gains that do not exist. Fortunately, developers can use this same math to build a cost-free test that determines exactly when multi-model orchestration will actually pay off.
+The hidden costs of the multi-model strategy
+To orchestrate multiple language models, developers typically rely on three architectures.
+Model routers
+act as traffic cops, sending complex queries to expensive models and simple queries to cheaper ones. Cascades send every prompt to a cheap model first, only escalating to a premium model if the initial system signals low confidence. Finally, approaches like
+Mixture-of-Agents
+(MoA) fuse multiple models by asking them the same question and generating a synthesized answer from their combined outputs.
+These architectures introduce a &quot;shadow price&quot; to inference costs. Every time a development team implements a router or a cascade, they pay a premium in added system latency, complex infrastructure maintenance, and increased governance risks across multiple API providers.</div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title"><a href="https://venturebeat.com/orchestration/enterprises-using-multiple-ai-models-are-underestimating-failure-rates-by-2-25x">URL</a></h3>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">관련 질문</h3>
+                <ol class="questions">
+                    <li>Based on the article about &#x27;Enterprises using multiple AI models are underestimating failure rates by 2.25x&#x27;, what is the main challenge or development discussed?</li>
+                    <li>What are the key actors or entities involved in the &#x27;Enterprises using multiple AI models are underestimating failure rates by 2.25x&#x27; context?</li>
+                    <li>What are the potential future impacts or implications of the &#x27;Enterprises using multiple AI models are underestimating failure rates by 2.25x&#x27; as described?</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article-header">
+            <div class="article-date">2026년 07월 09일</div>
+            <h2 class="article-title">Judge doesn&#x27;t like Elon Musk settlement with SEC, but says court can&#x27;t block it</h2>
+        </div>
+        
+        <div class="article-content">
+            <div class="section">
+                <h3 class="section-title">요약</h3>
+                <div class="summary">Done deal
+Judge doesn’t like Elon Musk settlement with SEC, but says court can’t block it
+Judge reluctantly approves $1.5M settlement with SEC over Twitter stock violation.
+Jon Brodkin
 –
-Jul 6, 2026 3:57 pm
+Jul 9, 2026 3:10 pm
 |
-6
-A seal made from reclaimed copper from the Statue of Liberty and then flown on the space shuttle
-Discovery
-in 1985.
+29
+Elon Musk attends the 2022 Met Gala at The Metropolitan Museum of Art on May 2, 2022, in New York City.
 Credit:
-collectSPACE.com
-A seal made from reclaimed copper from the Statue of Liberty and then flown on the space shuttle
-Discovery
-in 1985.
+
+          
+          Getty Images | Dimitrios Kambouris
+Elon Musk attends the 2022 Met Gala at The Metropolitan Museum of Art on May 2, 2022, in New York City.
 Credit:
-collectSPACE.com
+
+          
+          Getty Images | Dimitrios Kambouris
 Text
         settings
 Story text
@@ -722,56 +733,51 @@ Orange
 * Subscribers only
 Learn more
 Minimize to nav
-Did you know that the space shuttle once launched the Statue of Liberty into space?
-In fact, there were two “Lady Liberties” on board
-Discovery
-when it lifted off on its fourth flight in April 1985. To be fair, each statue was only 15 inches tall (38.1 centimeters), but they were also each made of copper that was removed from the full-size statue during its then-still-ongoing restoration.
-After the weeklong STS-51D mission was over, one of the space-flown statues was placed on display, and the other was melted down to create copper seals, which were then sold to the public by the Statue of Liberty Ellis Island Centennial Commission.
-The copper dated back to the statue’s original 1875 to 1884 construction. A gift from France, the Statue of Liberty was originally intended to commemorate the United States’ centennial in 1876.
-Now, as the US
-enters its next 250 years
-, there have been an additional four decades of spaceflights when other objects from American history have been carried into Earth orbit. Which raises the question: What is the
-oldest known piece of Americana
-to have been launched off the planet?
-Oldest astronaut, oldest artifact?
-For the purposes of this article, Americana refers to any piece of memorabilia that dates as far back as the Revolutionary War and the signing of the Declaration... [truncated]</div>
+A federal judge reluctantly approved a $1.5 million settlement between Elon Musk and the Trump administration despite raising numerous concerns about a deal that lets Musk get off lightly for a rule violation that allegedly harmed Twitter investors.
+In an
+order
+approving the deal, US District Judge Sparkle Sooknanan said she “has significant misgivings about the settlement” between Musk and the Securities and Exchange Commission (SEC), and described “red flags” in the SEC’s decision-making. This isn’t surprising given that she
+previously questioned
+whether the deal is tainted by corruption. But there is a high legal bar for rejecting the settlement, and the circumstances do not meet “that high threshold,” she wrote yesterday.
+“That means that this Court must accept the Parties’ consent judgment,” Sooknanan, a Biden appointee, wrote. “Whether the Executive Branch (through the SEC) has done enough to hold Mr. Musk to account for his alleged violation is, like many other issues, for our citizenry to decide at the ballot box.”
+The settlement ends a lawsuit the Biden-era SEC filed after Musk purchased a 9 percent stake in Twitter in 2022 and failed to disclose it within 10 days as required under US law.</div>
             </div>
             
             <div class="section">
-                <h3 class="section-title"><a href="https://arstechnica.com/space/2026/07/whats-the-oldest-americana-flown-in-space/">URL</a></h3>
+                <h3 class="section-title"><a href="https://arstechnica.com/tech-policy/2026/07/judge-doesnt-like-elon-musk-settlement-with-sec-but-says-court-cant-block-it/">URL</a></h3>
             </div>
             
             <div class="section">
                 <h3 class="section-title">관련 질문</h3>
                 <ol class="questions">
-                    <li>Question 1 Placeholder</li>
-                    <li>Question 2 Placeholder</li>
-                    <li>Question 3 Placeholder</li>
+                    <li>Based on the article about &#x27;Judge doesn&#x27;t like Elon Musk settlement with SEC, but says court can&#x27;t block it&#x27;, what is the main challenge or development discussed?</li>
+                    <li>What are the key actors or entities involved in the &#x27;Judge doesn&#x27;t like Elon Musk settlement with SEC, but says court can&#x27;t block it&#x27; context?</li>
+                    <li>What are the potential future impacts or implications of the &#x27;Judge doesn&#x27;t like Elon Musk settlement with SEC, but says court can&#x27;t block it&#x27; as described?</li>
                 </ol>
             </div>
         </div>
     </article>
     <article class="article">
         <div class="article-header">
-            <div class="article-date">2026년 07월 07일</div>
-            <h2 class="article-title">‘I am mortified’: An iPhone user sent ‘sensitive pictures’ to a stranger’s phone after making this simple iMessage mistake — here’s how to avoid the same fate</h2>
+            <div class="article-date">2026년 07월 09일</div>
+            <h2 class="article-title">An electric drone just set a new world air speed record - 434 mph device could be ideal for anti-aircraft interceptor action</h2>
         </div>
         
         <div class="article-content">
             <div class="section">
                 <h3 class="section-title">요약</h3>
-                <div class="summary">Summary Placeholder: Phones
-‘I am mortified’: An iPhone user sent ‘sensitive pictures’ to a stranger’s phone after making this simple iMessage mistake — here’s how to avoid the same fate
+                <div class="summary">Pro
+An electric drone just set a new world air speed record - 434 mph device could be ideal for anti-aircraft interceptor action
 News
 By
-Alex Blake
+Craig Hale
 Published
-6 July 2026
-Don’t make this embarrassing iPhone error
+9 July 2026
+German electric drone breaks world speed record – unofficially
 When you purchase through links on our site, we may earn an affiliate commission.
 Here’s how it works
 .
-(Image credit: Brett Jordan on Unsplash)
+(Image credit: Quantum Systems Group)
 Copy link
 Facebook
 X
@@ -788,43 +794,37 @@ Follow us
 Add us as a preferred source on Google
 Newsletter
 Subscribe to our newsletter
-A mistake meant an iPhone user sent ‘sensitive’ texts to the wrong person
-Their partner’s phone number was associated with the wrong device
-The error happened when their partner didn’t properly reset their iPhone
-When you
-sell an old iPhone
-, do you really know that it’s been fully wiped and disconnected from all your accounts? Because if you don’t, the consequences could be terrible — as one unfortunate Redditor has just vividly demonstrated. This particular story should come as a warning to any iPhone user who is thinking of getting rid of your device.
-The
-Reddit thread
-in question has the alarming headline of &quot;I may have accidentally been texting a child instead of my boyfriend?&quot; It includes screenshots that show a conversation with someone who claimed that “You have the wrong number. This is a child’s phone.”
-Worse, the original poster confided that the messages erroneously sent to the child’s device included “sensitive pictures” and “sensitive messages.” “I am mortified,” they revealed.
+Apex Recordhunter drone unofficially set a new air speed record of 434 mph
+High-speed demonstrator will help develop next-gen military drones
+Company targets further records with interceptor drones soon
+Germany’s Quantum Systems Group has broken the world airspeed record for an electric drone, hitting speeds of 699km/h (434mph) during internal testing on June 26, 2026.
+Though the company is yet to carry out a formal, independently verified attempt at setting a record under the official measurement rules to be recognized by both Guinness World Records and Fédération Aéronautique Internationale (FAI), the speed far exceeds that of the current record holder – 657.59km/h (409mph).
+The latest, unverified record was set in straight and level flight, and would represent a 6.3% increase over the current record. Official testing is expected within the coming weeks, the company said in a
+press release
+.
 Latest Videos From
 Watch full video here:
-It appears that this mix-up could be the result of the poster&#x27;s partner not fully resetting their iPhone and disconnecting it from their Messages account — something
-Apple
-specifically advises you to do if you sell an iPhone and replace it with an
-Android device
-.
-As a result, messages t... [truncated]</div>
+Record-breaker is merely a technology demonstrator
+Quantum Systems explained that the Apex Recordhunter drone was developed over the past year, but “serves as a technology demonstrator for next-generation high-speed systems” rather than being a commercially viable product. “Several innovations from the project are expected to support future interceptor drone programs,” the company added.</div>
             </div>
             
             <div class="section">
-                <h3 class="section-title"><a href="https://www.techradar.com/phones/i-am-mortified-an-iphone-user-sent-sensitive-pictures-to-a-strangers-phone-after-making-this-simple-imessage-mistake-heres-how-to-avoid-the-same-fate">URL</a></h3>
+                <h3 class="section-title"><a href="https://www.techradar.com/pro/an-electric-drone-just-set-a-new-world-air-speed-record-434-mph-device-could-be-ideal-for-anti-aircraft-interceptor-action">URL</a></h3>
             </div>
             
             <div class="section">
                 <h3 class="section-title">관련 질문</h3>
                 <ol class="questions">
-                    <li>Question 1 Placeholder</li>
-                    <li>Question 2 Placeholder</li>
-                    <li>Question 3 Placeholder</li>
+                    <li>Based on the article about &#x27;An electric drone just set a new world air speed record - 434 mph device could be ideal for anti-aircraft interceptor action&#x27;, what is the main challenge or development discussed?</li>
+                    <li>What are the key actors or entities involved in the &#x27;An electric drone just set a new world air speed record - 434 mph device could be ideal for anti-aircraft interceptor action&#x27; context?</li>
+                    <li>What are the potential future impacts or implications of the &#x27;An electric drone just set a new world air speed record - 434 mph device could be ideal for anti-aircraft interceptor action&#x27; as described?</li>
                 </ol>
             </div>
         </div>
     </article>
     
     <div class="footer">
-        <p>이 문서는 2026년 07월 09일 05:32에 생성되었습니다.</p>
+        <p>이 문서는 2026년 07월 10일 05:33에 생성되었습니다.</p>
         <p>총 10개의 기사가 포함되어 있습니다.</p>
     </div>
 
